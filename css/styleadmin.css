@@ -17,7 +17,7 @@ h1 {
 }
 
 .table1 tr th{
-    background: #003B5E;
+    background: #5689A8;
     color: #fff;
     font-weight: normal;
 }
@@ -136,29 +136,30 @@ label.light {
     }
 }
 .welcome-img{
-    width: 150px;
+    width: 100px;
     display: block;
-    padding-bottom: 10px;
 }
 .sidebar {
-    width: 200px;
-    background-color: #054c73;
+    width: 240px;
+    background-color: #014c71;
     position: fixed;
     left: 0;
     bottom: 0;
     top: 0;
     transition: 0.3s;
     z-index: 100;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
 }
 
 .sidebar-title {
     color: #ffffff;
     text-align: center;
     line-height: 80px;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
-    padding: 10px;
-    background-color: #011825;
+    padding: 20px 10px;
+    background-color: #5689A8;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .sidebar ul {
@@ -173,24 +174,33 @@ label.light {
 
 .sidebar ul li a {
     text-decoration: none;
-    color: #bdd5e6;
-    padding: 12px 15px;
+    color: #b8d2e4;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
-    border-radius: 6px;
-    font-size: 15px;
+    border-radius: 8px;
+    font-size: 16px;
     font-weight: 500;
     transition: all 0.3s ease;
+    margin-bottom: 5px;
 }
 
 .sidebar ul li a i {
-    font-size: 22px;
+    font-size: 20px;
     margin-right: 15px;
+    width: 25px;
+    text-align: center;
 }
 
-.sidebar ul li a:hover,
-.sidebar ul li a.active {
-    background-color: #246e99;
+.sidebar ul li.active a,
+.sidebar ul li a:hover {
+    background-color: #1d6b9d;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sidebar ul li.active a i,
+.sidebar ul li a:hover i {
     color: #ffffff;
 }
 .dashbord{
@@ -212,7 +222,7 @@ label.light {
     width: auto;
     transition: 0.3s;
     padding: 30px;
-    margin-left: 200px;
+    margin-left: 240px;
     background-color: #eef7fc;
     min-height: 100vh;
 }
@@ -230,4 +240,38 @@ label.light {
 form {
     max-width: 480px;
     margin-left: 0;
+}
+.sect-one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    gap: 14px;
+    padding: 20px;
+    width: 100%;
+    height: fit-content;
+    background-color: #e8eef8;
+    border: 1px solid rgba(116, 116, 132, 0.204);
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.sect-one button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.sect-one span {
+    color: var(--blue-primary);
+}
+
+h2, h3, p {
+    margin: 0;
 }

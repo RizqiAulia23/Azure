@@ -44,7 +44,6 @@
                     <div class="button-container">
                         <button type="submit" name="submit" class="btn-login">LOGIN</button>
                     </div>
-                    <p class="register-link">Belum Punya Akun? <a href="register.php">Klik di sini untuk Mendaftar</a></p>
                 </form>
 
                 <?php
@@ -77,7 +76,7 @@
                             echo '<script type="text/javascript">window.location="user/home.php";</script>';
                         }
                         else{
-                            header('location:index.php');
+                            header('location:home.php');
                         }
                     }
                 }

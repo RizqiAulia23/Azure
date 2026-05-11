@@ -17,7 +17,7 @@
     <!-- header -->
     <header>
         <div class="header-inner">
-            <a href="index.php" class="logo">
+            <a href="home.php" class="logo">
                 <img src="img/logo.png" alt="Azure Logo">
             </a>   
             <nav>
@@ -111,7 +111,7 @@
             </div>
         </div>
         
-        <a href="produk.php" class="btn-explore">EXPLORE</a>
+        
     </section>
 
     <!-- Best Seller Section -->
@@ -126,11 +126,21 @@
                 if(mysqli_num_rows($best_seller) > 0){
                     while($p = mysqli_fetch_array($best_seller)){
             ?>
-                <a href="data_produk.php?id=<?php echo $p['product_id'] ?>" class="product-card-v2">
-                    <img src="produk/<?php echo $p['product_image'] ?>" alt="<?php echo $p['product_name'] ?>" class="product-img-v2">
-                    <h4><?php echo $p['product_name'] ?></h4>
-                    <p><?php echo $p['product_description'] ?></p>
-                </a>
+               <a href="data_produk.php?id=<?php echo $p['product_id'] ?>" class="product-card-v2">
+
+        <img src="produk/<?php echo $p['product_image'] ?>" 
+         alt="<?php echo $p['product_name'] ?>" 
+         class="product-img-v2">
+
+            <h4><?php echo $p['product_name'] ?></h4>
+
+             <p><?php echo $p['product_description'] ?></p>
+
+         <span class="product-price">
+        IDR <?php echo number_format($p['product_price']) ?>
+        </span>
+
+</a>
             <?php }} ?>
         </div>
         

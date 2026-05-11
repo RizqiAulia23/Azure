@@ -1,10 +1,17 @@
-<?php include 'session.php'; ?>
+<?php
+session_start();
+include '../db.php';
+
+$query = mysqli_query($conn, "SELECT * FROM tb_admin WHERE admin_id = '".$_SESSION['id_login']."'");
+$d = mysqli_fetch_object($query);
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Dashboard Admin</title>
     <link rel="stylesheet" href="../css/styleadmin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <div class="warper">
@@ -16,15 +23,15 @@
                 <?php include 'sidebar.php'; ?>
             </ul>
         </div>
-
+        <div class="section">
        <div class="sect-one">
                     <div class="desc-two">
-                    <h3>Selamat datang, <span> <?php echo $d->nama ?> </span>!</h3>
-                    <p>kelola data dengan aman dan efisien dari TriNova Tech</p>
-                    <button onclick="window.location='../index.php'">Lihat Website <i class="fa-solid fa-angle-right"></i> </button>
+                    <h3>Selamat datang, <span> <?php echo $d->admin_name ?> </span>!</h3>
+                    <p>kelola data dengan aman dan efisien dari AZURE</p>
+                    <button onclick="window.location='../home.php'">Lihat Website <i class="fa-solid fa-angle-right"></i> </button>
                     </div>
                 </div>
-
+            </div>
     </div>
 </body>
 </html>
