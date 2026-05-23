@@ -15,4 +15,10 @@ if(isset($_GET['idp'])){
     $delete = mysqli_query($conn, "DELETE FROM tb_product WHERE product_id = '".$_GET['idp']."'");
     echo '<script>window.location="produk_data.php"</script>';
 }
+
+if(isset($_GET['idm'])){
+    $table_name = "tb_masseges";
+    $delete = mysqli_query($conn, "DELETE FROM $table_name WHERE massege_id = '".$_GET['idm']."'");
+    echo '<script>window.location="messages.php"</script>';
+}
 ?>

@@ -1,0 +1,158 @@
+/* Detail Page Styling */
+.detail-section {
+    padding: 60px 0 100px;
+    background-color: #f8fafc;
+}
+
+.breadcrumb {
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumb a {
+    color: #64748b;
+    transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #064e89;
+}
+
+.breadcrumb span {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.detail-grid {
+    display: grid;
+    /* grid-template-columns: Membuat 2 kolom dengan ukuran yang sama besar (1 bagian masing-masing). */
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    background: #fff;
+    padding: 50px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+}
+
+/* Image Side */
+.detail-image .image-wrapper {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #f1f5f9;
+}
+
+.detail-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.detail-image:hover img {
+    /* scale(1.05): Memberikan efek zoom sedikit (5%) saat gambar di-hover. */
+    transform: scale(1.05);
+}
+
+/* Info Side */
+.category-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #064e89;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.detail-info h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.detail-info .price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #064e89;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.description {
+    margin-bottom: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.description h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.description p {
+    color: #64748b;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+
+
+.product-features {
+    display: grid;
+    /* repeat(3, 1fr): Membuat 3 kolom kecil untuk fitur produk. */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 30px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-item i {
+    font-size: 24px;
+    color: #064e89;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.feature-item span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .detail-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .detail-info h1 {
+        font-size: 32px;
+    }
+    .product-features {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+    .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        text-align: left;
+    }
+    .feature-item i {
+        margin-bottom: 0;
+    }
+}

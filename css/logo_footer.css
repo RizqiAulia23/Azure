@@ -1,0 +1,5 @@
+/* footer logo style: Mengatur ukuran dan jarak logo yang ada di bagian bawah website. */
+.footer-logo img {
+  height: 45px;
+  margin-bottom: 25px;
+}

@@ -5,6 +5,7 @@
   font-family: "Quicksand", sans-serif;
 }
 
+/* :root: Tempat menyimpan variabel CSS agar bisa digunakan berulang kali di seluruh file. */
 :root {
   --primary-blue: #0478ee;
   --dark-blue: #064e89;
@@ -12,6 +13,8 @@
   --bg-best-seller: #e1eff8;
   --text-dark: #17233d;
   --text-muted: #5f6c88;
+  --footer-bg: #5a8fb3;
+  --accent-color: #004b77;
 }
 
 body {
@@ -37,10 +40,14 @@ a {
 
 /* Header */
 header {
-  padding: 5px;
+  padding: 15px 0;
   background: #fff;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #f0f0f0;
   width: 100%;
+  /* sticky: Membuat header tetap berada di atas layar meskipun di-scroll. */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo img {
@@ -51,8 +58,9 @@ header {
 .header-inner {
   display: flex;
   align-items: center;
-  width: 100%;
-  padding: 0 20px;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
 }
 
 nav {
@@ -67,10 +75,10 @@ nav ul {
 }
 
 nav ul li a {
-  font-size: 18px;
-  font-weight: 600;
-  color: #444;
-  transition: color 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease;
   letter-spacing: 0.5px;
 }
 
@@ -79,18 +87,82 @@ nav ul li a.active {
   color: var(--primary-blue);
 }
 
-/* Hero Banner */
-.hero-banner {
-  width: 100%;
-  overflow: hidden;
-  background: #f4f9ff;
+.profile-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #eee;
+  transition: transform 0.3s;
 }
 
-.hero-banner img {
+.profile-icon:hover img {
+  transform: scale(1.1);
+  border-color: var(--primary-blue);
+}
+
+/* Hero Banner for Product Page */
+.product-hero {
+  position: relative;
+  height: 500px;
   width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.product-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* linear-gradient: Membuat lapisan bayangan hitam transparan agar teks putih mudah dibaca. */
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.1) 60%,
+    transparent 100%
+  );
+}
+
+.product-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.product-hero-content .label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
   display: block;
-  object-fit: cover;
-  max-height: 520px;
+}
+
+.product-hero-content h1 {
+  font-family: "Times New Roman", serif;
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.product-hero-content h1 em {
+  font-style: italic;
+  font-family: "Times New Roman", serif;
+  color: #8cc6ff; /* Light blue color for the signature text */
+}
+
+.product-hero-content p {
+  font-size: 18px;
+  max-width: 550px;
+  line-height: 1.6;
+  font-weight: 500;
 }
 
 /* Hero Slider */
@@ -215,17 +287,36 @@ nav ul li a.active {
   font-size: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #0e3b56;
+  color: #5a8fb3;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   display: block;
 }
 
 .section-title-main {
   font-family: "Times New Roman", serif;
-  font-size: 39px;
-  margin-bottom: 50px;
-  color: #333;
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.section-title-main span {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.section-title-main span::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110%;
+  height: 3px;
+  background: #000;
 }
 
 .category-flex {
@@ -243,7 +334,7 @@ nav ul li a.active {
 }
 
 .category-item:not(:last-child)::after {
-  content: "";
+  content: "";  
   position: absolute;
   right: 0;
   top: 10%;
@@ -295,37 +386,37 @@ nav ul li a.active {
 }
 
 /* Product Filter Section */
-.product-filter-section {
-  padding: 80px 0 20px;
-  text-align: center;
-}
-
 .filter-bar {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 30px;
+  margin-bottom: 60px;
+  justify-content: flex-start;
 }
 
 .filter-button {
-  border: none;
+  border: 1px solid #d1d9e6;
   background: #fff;
-  color: var(--text-dark);
-  padding: 12px 28px;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 13px;
-  box-shadow: 0 8px 18px rgba(4, 120, 238, 0.08);
+  color: #17233d;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-.filter-button:hover,
+.filter-button:hover {
+  background: #f8f9fa;
+  transform: translateY(-1px);
+}
+
 .filter-button.active {
-  background: var(--primary-blue);
+  background: #2c3e50;
   color: #fff;
-  box-shadow: 0 12px 28px rgba(4, 120, 238, 0.18);
+  border-color: #2c3e50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Best Seller Section */
@@ -337,6 +428,7 @@ nav ul li a.active {
 
 .best-seller-grid {
   display: grid;
+  /* repeat(4, 1fr): Membagi baris menjadi 4 kolom dengan lebar yang sama otomatis. */
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   max-width: 1200px;
@@ -359,6 +451,7 @@ nav ul li a.active {
 }
 
 .product-card-v2:hover {
+  /* translateY(-8px): Memberikan efek kartu produk "terangkat" saat disentuh kursor. */
   transform: translateY(-8px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
 }
@@ -412,24 +505,99 @@ nav ul li a.active {
   text-transform: uppercase;
 }
 
-/* Footer */
-.footer {
-  padding: 30px 0;
-  background-color: #004b77;
-  color: #ccc;
+/* Complex Footer */
+.main-footer {
+  background-color: var(--footer-bg);
+  color: #fff;
+  padding: 80px 0 20px;
+  font-size: 15px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.2fr 1.3fr;
+  gap: 40px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-col p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.footer-logo img {
+  height: 45px;
+  margin-bottom: 25px;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #f0f0f0;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 60px;
+  padding-top: 20px;
   text-align: center;
 }
-.footer h4 {
+
+.footer-bottom p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Global Footer Refinements */
+.footer-col .footer-links li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.footer-col .footer-links li i {
+  font-size: 18px;
+  margin-top: 4px;
   color: #fff;
-  margin-bottom: 10px;
-}
-.footer p {
-  margin-bottom: 10px;
-}
-.footer small {
-  margin-top: 20px;
-  display: inline-block;
-  color: #ffffff;
+  opacity: 0.8;
 }
 
 @media (max-width: 992px) {

@@ -11,6 +11,7 @@
     <title>Azure store</title>
     <link rel="stylesheet" type="text/css" href="css/style.css?v=1.1">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -23,7 +24,7 @@
             <nav>
                 <ul>
                     <li><a href="home.php" class="active">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.php">About Us</a></li>
                     <li><a href="produk.php">Product</a></li>
                     <li><a href="contact.php">Contact</a></li>
                 </ul>
@@ -126,7 +127,7 @@
                 if(mysqli_num_rows($best_seller) > 0){
                     while($p = mysqli_fetch_array($best_seller)){
             ?>
-               <a href="data_produk.php?id=<?php echo $p['product_id'] ?>" class="product-card-v2">
+               <a href="detail.php?id=<?php echo $p['product_id'] ?>" class="product-card-v2">
 
         <img src="produk/<?php echo $p['product_image'] ?>" 
          alt="<?php echo $p['product_name'] ?>" 
@@ -148,20 +149,53 @@
     </section>
 
     <!-- footer -->
-    <div class="footer">
-        <div class="container">
-            <h4>Alamat</h4>
-            <p><?php echo $a->admin_address ?></p>
-            
-            <h4>Email</h4>
-            <p><?php echo $a->admin_email ?></p>
-            
-            <h4>No. Hp</h4>
-            <p><?php echo $a->admin_telp ?></p>
-            
-            <small>Copyright &copy; 2026 - Azure store.</small>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Azure Logo">
+                </div>
+                <p>Timeless scents crafted with passion and precision for every moment of your life.</p>
+                <div class="social-icons">
+                    <a href="javascript:void(0)"><i class='bx bxl-instagram'></i></a>
+                    <a href="javascript:void(0)"><i class='bx bxl-twitter'></i></a>
+                    <a href="javascript:void(0)"><i class='bx bxl-facebook'></i></a>
+                    <a href="javascript:void(0)"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Menu</h4>
+                <ul class="footer-links">
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="produk.php">Product</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Customer Care</h4>
+                <ul class="footer-links">
+                    <li><a href="javascript:void(0)">Shipping & Delivery</a></li>
+                    <li><a href="javascript:void(0)">Returns & Exchanges</a></li>
+                    <li><a href="javascript:void(0)">FAQs</a></li>
+                    <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><i class='bx bx-phone'></i> <?php echo $a->admin_telp ?></li>
+                    <li><i class='bx bx-envelope'></i> <?php echo $a->admin_email ?></li>
+                    <li><i class='bx bx-map'></i> <?php echo $a->admin_address ?></li>
+                </ul>
+            </div>
         </div>
-    </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 AZURE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         let slideIndex = 0;
@@ -196,6 +230,13 @@
 
         // Initialize slider
         resetInterval();
+
+        // Mencegah halaman melompat ke atas saat klik link dengan href javascript:void(0)
+        document.querySelectorAll('a[href^="javascript:void(0)"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+            });
+        });
     </script>
 </body>
 </html>

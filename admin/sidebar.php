@@ -25,6 +25,12 @@ $current_page = basename($_SERVER['PHP_SELF']);
         <span>Product</span>
     </a>
 </li>
+<li class="<?php echo ($current_page == 'messages.php') ? 'active' : ''; ?>">
+    <a href="messages.php">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Messages</span> 
+    </a>
+</li>
 <li>
     <a href="../logout.php" onclick="return confirm('yakinih mau logout kamu?')">
         <i class="fa-solid fa-right-from-bracket"></i>

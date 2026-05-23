@@ -28,11 +28,11 @@ h1 {
 }
 
 .table1 tr:hover {
-    background-color: #f5f5f5;
+    background: #eef8ff;
 }
 
-.table1 tr:nth-child(even) {
-    background-color: #f2f2f2;
+.table1 tr {
+    background-color: #ffffff;
 }
 
 *, *:before, *:after {
@@ -142,6 +142,7 @@ label.light {
 .sidebar {
     width: 240px;
     background-color: #014c71;
+    /* position: fixed: Membuat sidebar tetap di kiri meskipun halaman di-scroll. */
     position: fixed;
     left: 0;
     bottom: 0;
@@ -218,6 +219,7 @@ label.light {
 
 
 .section {
+    /* position: relative: Menjadikan elemen ini sebagai patokan posisi untuk elemen di dalamnya. */
     position: relative;
     width: auto;
     transition: 0.3s;
@@ -242,9 +244,11 @@ form {
     margin-left: 0;
 }
 .sect-one {
+    /* display: flex: Mengatur elemen di dalamnya agar berjejer secara horizontal. */
     display: flex;
     flex-direction: row;
     align-items: center;
+    /* justify-content: space-between: Memberi jarak maksimal antar elemen (kiri dan kanan). */
     justify-content: space-between;
     gap: 0;
     gap: 14px;
