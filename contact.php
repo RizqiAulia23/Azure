@@ -172,10 +172,10 @@
                 </div>
                 <p>Timeless scents crafted with passion and precision for every moment of your life.</p>
                 <div class="social-icons">
-                    <a href="javascript:void(0)"><i class='bx bxl-instagram'></i></a>
-                    <a href="javascript:void(0)"><i class='bx bxl-twitter'></i></a>
-                    <a href="javascript:void(0)"><i class='bx bxl-facebook'></i></a>
-                    <a href="javascript:void(0)"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>
                 </div>
             </div>
             <div class="footer-col">
@@ -190,10 +190,10 @@
             <div class="footer-col">
                 <h4>Customer Care</h4>
                 <ul class="footer-links">
-                    <li><a href="javascript:void(0)">Shipping & Delivery</a></li>
-                    <li><a href="javascript:void(0)">Returns & Exchanges</a></li>
-                    <li><a href="javascript:void(0)">FAQs</a></li>
-                    <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                    <li><a href="contact.php">Shipping & Delivery</a></li>
+                    <li><a href="contact.php">Returns & Exchanges</a></li>
+                    <li><a href="contact.php">FAQs</a></li>
+                    <li><a href="contact.php">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-col">

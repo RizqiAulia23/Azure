@@ -40,7 +40,7 @@
         $hero_label = "OUR COLLECTION";
         $hero_title = "Discover Your<br><em style=\"color: #8cc6ff;\">Signature Scent</em>";
         $hero_desc = "Premium fragrance crafted with the finest ingredients to elevate your every moment";
-        $hero_bg = "img/slider1.png";
+        $hero_bg = "img/bg_new.jpeg";
 
         if(isset($_GET['kat'])){
             $id_kat = $_GET['kat'];
@@ -51,24 +51,24 @@
 
                 if(strpos($cat_name, 'floral') !== false){
                     $hero_label = "FLORAL COLLECTION";
-                    $hero_title = "Bloom Into Your<br><em style=\"color: #f48c9a;\">Signature</em>";
+                    $hero_title = "Bloom Into Your<br><em style=\"color: #8cc6ff;\">Signature</em>";
                     $hero_desc = "Delicate floral notes crafted for timeless elegance.";
-                    $hero_bg = "img/slider2.png"; // Placeholder background
+                    $hero_bg = "img/bg_new.jpeg"; // unified background
                 } elseif(strpos($cat_name, 'woody') !== false){
                     $hero_label = "WOODY COLLECTION";
-                    $hero_title = "Crafted for<br><em style=\"color: #d49d79;\">Timeless Strength</em>";
+                    $hero_title = "Crafted for<br><em style=\"color: #8cc6ff;\">Timeless Strength</em>";
                     $hero_desc = "Warm, rich and sophisticated scents inspired by nature's deepest woods.";
-                    $hero_bg = "img/slider3.png"; // Placeholder background
+                    $hero_bg = "img/bg_new.jpeg"; // unified background
                 } elseif(strpos($cat_name, 'fresh') !== false){
                     $hero_label = "FRESH COLLECTION";
                     $hero_title = "Breath in<br><em style=\"color: #a0d468;\">Pure freshness</em>";
                     $hero_desc = "Clean, crisp, and uplifting scents inspired by nature to refresh your every moment.";
-                    $hero_bg = "img/slider1.png"; // Placeholder background
+                    $hero_bg = "img/bg_new.jpeg"; // unified background
                 } elseif(strpos($cat_name, 'leather') !== false){
                     $hero_label = "LEATHER COLLECTION";
                     $hero_title = "Crafted From<br><em style=\"color: #8cc6ff;\">Strength and Elegance</em>";
                     $hero_desc = "Luxurious leather notes, artfully blended for a bold, confident, and unforgettable signature.";
-                    $hero_bg = "img/slider3.png"; // Placeholder background
+                    $hero_bg = "img/bg_new.jpeg"; // unified background
                 }
             }
         }
@@ -165,10 +165,10 @@
                 </div>
                 <p>Timeless scents crafted with passion and precision for every moment of your life.</p>
                 <div class="social-icons">
-                    <a href="javascript:void(0)"><i class='bx bxl-instagram'></i></a>
-                    <a href="javascript:void(0)"><i class='bx bxl-twitter'></i></a>
-                    <a href="javascript:void(0)"><i class='bx bxl-facebook'></i></a>
-                    <a href="javascript:void(0)"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>
                 </div>
             </div>
             
@@ -185,10 +185,10 @@
             <div class="footer-col">
                 <h4>Customer Care</h4>
                 <ul class="footer-links">
-                    <li><a href="javascript:void(0)">Shipping & Delivery</a></li>
-                    <li><a href="javascript:void(0)">Returns & Exchanges</a></li>
-                    <li><a href="javascript:void(0)">FAQs</a></li>
-                    <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                    <li><a href="contact.php">Shipping & Delivery</a></li>
+                    <li><a href="contact.php">Returns & Exchanges</a></li>
+                    <li><a href="contact.php">FAQs</a></li>
+                    <li><a href="contact.php">Privacy Policy</a></li>
                 </ul>
             </div>
             

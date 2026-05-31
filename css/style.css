@@ -90,7 +90,7 @@ nav ul li a.active {
 .profile-icon img {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 50%; 
   border: 2px solid #eee;
   transition: transform 0.3s;
 }
