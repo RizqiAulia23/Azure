@@ -38,12 +38,12 @@
     <!-- header -->
     <header>
         <div class="header-inner">
-            <a href="home.php" class="logo">
+            <a href="index.php" class="logo">
                 <img src="img/logo.png" alt="Azure Logo">
             </a>
             <nav>
                 <ul>
-                    <li><a href="home.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="produk.php">Product</a></li>
                     <li><a href="contact.php" class="active">Contact</a></li>
@@ -181,7 +181,7 @@
             <div class="footer-col">
                 <h4>Menu</h4>
                 <ul class="footer-links">
-                    <li><a href="home.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="produk.php">Product</a></li>
                     <li><a href="contact.php">Contact</a></li>

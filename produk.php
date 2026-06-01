@@ -18,12 +18,12 @@
     <!-- header -->
     <header>
         <div class="header-inner">
-            <a href="home.php" class="logo">
+            <a href="index.php" class="logo">
                 <img src="img/logo.png" alt="Azure Logo">
             </a>   
             <nav>
                 <ul>
-                    <li><a href="home.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="produk.php" class="active">Product</a></li>
                     <li><a href="contact.php">Contact</a></li>
@@ -61,7 +61,7 @@
                     $hero_bg = "img/bg_new.jpeg"; // unified background
                 } elseif(strpos($cat_name, 'fresh') !== false){
                     $hero_label = "FRESH COLLECTION";
-                    $hero_title = "Breath in<br><em style=\"color: #a0d468;\">Pure freshness</em>";
+                    $hero_title = "Breath in<br><em style=\"color: #8cc6ff;\">Pure freshness</em>";
                     $hero_desc = "Clean, crisp, and uplifting scents inspired by nature to refresh your every moment.";
                     $hero_bg = "img/bg_new.jpeg"; // unified background
                 } elseif(strpos($cat_name, 'leather') !== false){
@@ -175,7 +175,7 @@
             <div class="footer-col">
                 <h4>Menu</h4>
                 <ul class="footer-links">
-                    <li><a href="home.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="produk.php">Product</a></li>
                     <li><a href="contact.php">Contact</a></li>
