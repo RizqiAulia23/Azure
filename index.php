@@ -201,7 +201,6 @@
         let slideIndex = 0;
         const slides = document.querySelectorAll('.slide');
         const dots = document.querySelectorAll('.dot');
-        let slideInterval;
 
         function showSlide(n) {
             slides.forEach(slide => slide.classList.remove('active'));
@@ -215,21 +214,14 @@
 
         function moveSlide(step) {
             showSlide(slideIndex + step);
-            resetInterval();
         }
 
         function currentSlide(n) {
             showSlide(n);
-            resetInterval();
         }
 
-        function resetInterval() {
-            clearInterval(slideInterval);
-            slideInterval = setInterval(() => moveSlide(1), 5000);
-        }
-
-        // Initialize slider
-        resetInterval();
+        // Initialize slider on page load
+        showSlide(slideIndex);
 
         // Mencegah halaman melompat ke atas saat klik link dengan href javascript:void(0)
         document.querySelectorAll('a[href^="javascript:void(0)"]').forEach(link => {
