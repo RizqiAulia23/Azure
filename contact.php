@@ -119,7 +119,7 @@
                     <i class='bx bxs-map'></i>
                     <h4>AZURE PERFUME</h4>
                     <p><?php echo $a->admin_address ?></p>
-                    <a href="https://share.google/FaHLFSIjOYa5vba9l" class="btn-google-maps">View on Google Maps <i class='bx bx-export'></i></a>
+                    <a href="google.com/maps/place/Mie+Gacoan+Banjarbaru+A+Yani+Kota+Banjar+Baru/data=!4m2!3m1!1s0x2de681007be6286b:0x1f5375ddbf09e45b?sa=X&ved=1t:242&ictx=111&cshid=1780364648236130" class="btn-google-maps">View on Google Maps <i class='bx bx-export'></i></a>
                 </div>
             </div>
 
