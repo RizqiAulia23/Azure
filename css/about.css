@@ -150,25 +150,24 @@
 .stats-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px 24px;
+  gap: 30px 24px;
   align-items: start;
 }
 
 .stat-item {
-  background: #f8fafc;
-  padding: 22px 20px;
-  border-radius: 20px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   text-align: left;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  gap: 18px;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .stat-item i {
-  font-size: 30px;
+  font-size: 42px;
   color: #064e89;
-  margin-right: 18px;
-  min-width: 42px;
+  min-width: 48px;
 }
 
 .stat-item-text {
@@ -178,15 +177,15 @@
 }
 
 .stat-item h3 {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 34px;
+  font-weight: 800;
   color: #0f172a;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .stat-item p {
-  font-size: 14px;
-  color: #64748b;
+  font-size: 15px;
+  color: #475569;
   font-weight: 600;
 }
 
