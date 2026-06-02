@@ -2,11 +2,11 @@
 session_start();
 include '../db.php';
 
-$stmt = mysqli_prepare($conn, "SELECT * FROM tb_admin WHERE admin_id = ?");
-mysqli_stmt_bind_param($stmt, "s", $_SESSION['id_login']);
-mysqli_stmt_execute($stmt);
-$result = mysqli_stmt_get_result($stmt);
-$d = mysqli_fetch_object($result);
+$query = mysqli_query($conn, "SELECT * FROM tb_admin WHERE admin_id = '".$_SESSION['id_login']."'");
+$d = mysqli_fetch_object($query);
+if($_SESSION['status_login'] != true){
+    echo '<script type="text/javascript">window.location="../login.php";</script>';
+}
 ?>
 <html lang="en">
 <head>
