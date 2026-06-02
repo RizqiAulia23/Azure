@@ -15,7 +15,7 @@
             <div class="overlay-text">
                 <h1>Welcome Back</h1>
                 <div class="line-separator"></div>
-                <p>Sign in to continue your journey<br>with <strong>AZURE.</strong></p>
+                <p>Login to continue your journey<br>with <strong>AZURE.</strong></p>
             </div>
         </div>
 

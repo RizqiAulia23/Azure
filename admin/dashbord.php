@@ -2,8 +2,11 @@
 session_start();
 include '../db.php';
 
-$query = mysqli_query($conn, "SELECT * FROM tb_admin WHERE admin_id = '".$_SESSION['id_login']."'");
-$d = mysqli_fetch_object($query);
+$stmt = mysqli_prepare($conn, "SELECT * FROM tb_admin WHERE admin_id = ?");
+mysqli_stmt_bind_param($stmt, "s", $_SESSION['id_login']);
+mysqli_stmt_execute($stmt);
+$result = mysqli_stmt_get_result($stmt);
+$d = mysqli_fetch_object($result);
 ?>
 <html lang="en">
 <head>
@@ -28,7 +31,7 @@ $d = mysqli_fetch_object($query);
                     <div class="desc-two">
                     <h3>Selamat datang, <span> <?php echo $d->admin_name ?> </span>!</h3>
                     <p>kelola data dengan aman dan efisien dari AZURE</p>
-                    <button onclick="window.location='../home.php'">Lihat Website <i class="fa-solid fa-angle-right"></i> </button>
+                    <button onclick="window.location='../index.php'">Lihat Website <i class="fa-solid fa-angle-right"></i> </button>
                     </div>
                 </div>
             </div>
