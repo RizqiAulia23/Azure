@@ -94,8 +94,8 @@
 
 /* Story and Stats Section */
 .about-story-stats {
-  padding: 100px 0;
-  background: #f1f5f9;
+  padding: 120px 0;
+  background: #fff;
 }
 
 .story-stats-flex {
@@ -104,8 +104,15 @@
   gap: 80px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 60px;
+  background: #ffffff;
+  border-radius: 36px;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.08);
   align-items: start;
+}
+
+.story-text {
+  max-width: 600px;
 }
 
 .story-text .small-title {
@@ -114,54 +121,54 @@
   letter-spacing: 2px;
   color: #064e89;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .story-text h2 {
   font-family: "Playfair Display", serif;
-  font-size: 42px;
+  font-size: 44px;
   color: #0f172a;
-  line-height: 1.2;
-  margin-bottom: 25px;
+  line-height: 1.15;
+  margin-bottom: 24px;
 }
 
 .story-text hr {
-  width: 50px;
+  width: 60px;
   height: 3px;
   background: #064e89;
   border: none;
-  margin: 25px 0;
+  margin: 20px 0;
 }
 
 .story-text p {
   color: #475569;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.8;
+  max-width: 520px;
 }
 
 .stats-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px 24px;
+  gap: 24px 24px;
   align-items: start;
 }
 
 .stat-item {
-  background: transparent;
-  padding: 10px 0;
-  border-radius: 0;
+  background: #f8fafc;
+  padding: 22px 20px;
+  border-radius: 20px;
   display: flex;
   align-items: flex-start;
   text-align: left;
-  box-shadow: none;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
 }
 
 .stat-item i {
-  font-size: 28px;
+  font-size: 30px;
   color: #064e89;
   margin-right: 18px;
-  margin-bottom: 0;
-  min-width: 36px;
+  min-width: 42px;
 }
 
 .stat-item-text {
@@ -171,14 +178,14 @@
 }
 
 .stat-item h3 {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   color: #0f172a;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .stat-item p {
-  font-size: 13px;
+  font-size: 14px;
   color: #64748b;
   font-weight: 600;
 }
