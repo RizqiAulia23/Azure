@@ -181,7 +181,7 @@
                     <li><a href="contact.php">Privacy Policy</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div class="footer-col"> 
                 <h4>Contact</h4>
                 <ul class="footer-links">
                     <li>
