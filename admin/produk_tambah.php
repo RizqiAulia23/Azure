@@ -109,8 +109,7 @@
                             echo '<script>alert("Format file tidak diizinkan")</script>';
                         }
 
-                        echo $filename;
-                        exit;
+                     
 
                         $insert = mysqli_query($conn, "INSERT INTO tb_product (category_id, product_name, product_price, product_description, product_image, product_status)
                         VALUES 
