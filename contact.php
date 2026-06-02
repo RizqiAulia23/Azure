@@ -199,9 +199,9 @@
             <div class="footer-col">
                 <h4>Contact</h4>
                 <ul class="footer-links">
-                    <li><i class='bx bx-phone'></i> <?php echo $a->admin_telp ?></li>
-                    <li><i class='bx bx-envelope'></i> <?php echo $a->admin_email ?></li>
-                    <li><i class='bx bx-map'></i> <?php echo $a->admin_address ?></li>
+                    <li><i class='bx bx-phone'></i> <?php echo $a->admin_telp ?><a href="https://wa.me/628934826191" target="_blank"></a></li>
+                    <li><i class='bx bx-envelope'></i> <?php echo $a->admin_email ?><a href="mailto:aulnpc@gmail.com" target="_blank"><?php echo $a->admin_email ?></a></li>
+                    <li><i class='bx bx-map'></i> <?php echo $a->admin_address ?><a href="https://share.google" target="_blank"></a></li>
                 </ul>
             </div>
         </div>
