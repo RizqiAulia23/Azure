@@ -90,7 +90,7 @@ nav ul li a.active {
 .profile-icon img {
   width: 40px;
   height: 40px;
-  border-radius: 50%; 
+  border-radius: 50%;
   border: 2px solid #eee;
   transition: transform 0.3s;
 }
@@ -184,6 +184,7 @@ nav ul li a.active {
   background-position: center;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .slide::before {
@@ -210,8 +211,8 @@ nav ul li a.active {
   position: relative;
   z-index: 2;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 80px;
+  margin-left: 80px;
+  padding: 0 40px;
   color: #fff;
 }
 
@@ -334,7 +335,7 @@ nav ul li a.active {
 }
 
 .category-item:not(:last-child)::after {
-  content: "";  
+  content: "";
   position: absolute;
   right: 0;
   top: 10%;

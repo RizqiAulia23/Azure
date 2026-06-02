@@ -38,7 +38,7 @@
     <!-- Hero Section -->
     <?php
         $hero_label = "OUR COLLECTION";
-        $hero_title = "Discover Your<br><em style=\"color: #8cc6ff;\">Signature Scent</em>";
+        $hero_title = "Discover Your<br><em style=\"color: #ffffff;\">Signature Scent</em>";
         $hero_desc = "Premium fragrance crafted with the finest ingredients to elevate your every moment";
         $hero_bg = "img/bg_new.jpeg";
 
@@ -52,9 +52,9 @@
                 if(strpos($cat_name, 'floral') !== false){
                     $hero_label = "FLORAL COLLECTION";
                     $hero_title = "Bloom Into Your<br><em style=\"color: #ffffff;\">Signature</em>";
-                    $hero_desc = "Delicate floral notes crafted for timeless elegance.";
+                    $hero_desc = "Delicate floral notes crafted for timeless elegance."; 
                     $hero_bg = "img/bg_new.jpeg"; // unified background
-                } elseif(strpos($cat_name, 'woody') !== false){
+                } elseif(strpos($cat_name, 'woody') !== false){                                     
                     $hero_label = "WOODY COLLECTION";
                     $hero_title = "Crafted for<br><em style=\"color: #ffffff;\">Timeless Strength</em>";
                     $hero_desc = "Warm, rich and sophisticated scents inspired by nature's deepest woods.";
