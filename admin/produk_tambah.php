@@ -95,16 +95,22 @@
 
                         $type2 = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
 
-                        // menampung data format file yang diizinkan
                         $tipe_diizinkan = array('jpg', 'jpeg', 'png', 'gif');
 
-                        // validasi data dan upload 
                         if(in_array($type2, $tipe_diizinkan)){
-                            move_uploaded_file($tmp_name, '../produk/'.$filename);
-                            echo '<script>alert("File berhasil diupload")</script>';
+
+                            if(move_uploaded_file($tmp_name, '../produk/'.$filename)){
+                                echo '<script>alert("File berhasil diupload")</script>';
+                            } else {
+                                echo '<script>alert("File gagal diupload")</script>';
+                            }
+
                         } else {
                             echo '<script>alert("Format file tidak diizinkan")</script>';
                         }
+
+                        echo $filename;
+                        exit;
 
                         $insert = mysqli_query($conn, "INSERT INTO tb_product (category_id, product_name, product_price, product_description, product_image, product_status)
                         VALUES 
