@@ -51,22 +51,22 @@
 
                 if(strpos($cat_name, 'floral') !== false){
                     $hero_label = "FLORAL COLLECTION";
-                    $hero_title = "Bloom Into Your<br><em style=\"color: #8cc6ff;\">Signature</em>";
+                    $hero_title = "Bloom Into Your<br><em style=\"color: #ffffff;\">Signature</em>";
                     $hero_desc = "Delicate floral notes crafted for timeless elegance.";
                     $hero_bg = "img/bg_new.jpeg"; // unified background
                 } elseif(strpos($cat_name, 'woody') !== false){
                     $hero_label = "WOODY COLLECTION";
-                    $hero_title = "Crafted for<br><em style=\"color: #8cc6ff;\">Timeless Strength</em>";
+                    $hero_title = "Crafted for<br><em style=\"color: #ffffff;\">Timeless Strength</em>";
                     $hero_desc = "Warm, rich and sophisticated scents inspired by nature's deepest woods.";
                     $hero_bg = "img/bg_new.jpeg"; // unified background
                 } elseif(strpos($cat_name, 'fresh') !== false){
                     $hero_label = "FRESH COLLECTION";
-                    $hero_title = "Breath in<br><em style=\"color: #8cc6ff;\">Pure freshness</em>";
+                    $hero_title = "Breath in<br><em style=\"color: #ffffff;\">Pure freshness</em>";
                     $hero_desc = "Clean, crisp, and uplifting scents inspired by nature to refresh your every moment.";
                     $hero_bg = "img/bg_new.jpeg"; // unified background
                 } elseif(strpos($cat_name, 'leather') !== false){
                     $hero_label = "LEATHER COLLECTION";
-                    $hero_title = "Crafted From<br><em style=\"color: #8cc6ff;\">Strength and Elegance</em>";
+                    $hero_title = "Crafted From<br><em style=\"color: #ffffff;\">Strength and Elegance</em>";
                     $hero_desc = "Luxurious leather notes, artfully blended for a bold, confident, and unforgettable signature.";
                     $hero_bg = "img/bg_new.jpeg"; // unified background
                 }
