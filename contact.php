@@ -104,7 +104,7 @@
                         </div>
                     </div>
 
-                    <div class="social-links-container">
+                    <div>
                         <p>Follow Us</p>
                         <div class="contact-socials">
                             <a href="javascript:void(0)"><i class='bx bxl-instagram'></i></a>
@@ -139,15 +139,16 @@
                     <?php endif; ?>
 
                     <form action="" method="POST">
-                        <div">
-                            
+                        <div class="form-group">
+                            <i class='bx bx-user'></i>
                             <input type="text" name="nama" placeholder="Full Name" required>
                         </div>
-                        <div">
-                            
+                        <div class="form-group">
+                            <i class='bx bx-envelope'></i>
                             <input type="email" name="email" placeholder="Email address" required>
                         </div>
-                        <div">
+                        <div class="form-group">
+                            <i class='bx bx-pencil'></i>
                             <textarea name="pesan" placeholder="Your Message" required></textarea>
                         </div>
                         <button type="submit" name="submit" class="btn-send">Send Your Message</button>
