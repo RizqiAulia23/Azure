@@ -107,10 +107,10 @@
                     <div>
                         <p>Follow Us</p>
                         <div class="contact-socials">
-                            <a href="javascript:void(0)"><i class='bx bxl-instagram'></i></a>
-                            <a href="javascript:void(0)"><i class='bx bxl-twitter'></i></a>
-                            <a href="javascript:void(0)"><i class='bx bxl-facebook'></i></a>
-                            <a href="javascript:void(0)"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>   
                         </div>
                     </div>
                 </div>
