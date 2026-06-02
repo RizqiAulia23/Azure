@@ -119,7 +119,7 @@
                     <i class='bx bxs-map'></i>
                     <h4>AZURE PERFUME</h4>
                     <p><?php echo $a->admin_address ?></p>
-                    <a href="javascript:void(0)" class="btn-google-maps">View on Google Maps <i class='bx bx-export'></i></a>
+                    <a href="https://share.google/FaHLFSIjOYa5vba9l" class="btn-google-maps">View on Google Maps <i class='bx bx-export'></i></a>
                 </div>
             </div>
 
