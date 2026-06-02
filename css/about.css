@@ -95,7 +95,7 @@
 /* Story and Stats Section */
 .about-story-stats {
   padding: 140px 0 100px;
-  background: transparent;
+  background: none;
 }
 
 .story-stats-flex {
@@ -147,7 +147,7 @@
 .stats-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 28px 20px;
+  gap: 32px 24px;
   align-items: start;
 }
 
@@ -155,16 +155,16 @@
   display: flex;
   align-items: center;
   text-align: left;
-  gap: 18px;
-  padding: 0;
+  gap: 20px;
+  padding: 16px 12px;
   background: transparent;
   box-shadow: none;
 }
 
 .stat-item i {
-  font-size: 44px;
+  font-size: 50px;
   color: #064e89;
-  min-width: 48px;
+  min-width: 52px;
 }
 
 .stat-item-text {
@@ -174,7 +174,7 @@
 }
 
 .stat-item h3 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 800;
   color: #0f172a;
   margin-bottom: 4px;
