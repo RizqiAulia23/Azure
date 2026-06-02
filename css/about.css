@@ -94,25 +94,22 @@
 
 /* Story and Stats Section */
 .about-story-stats {
-  padding: 120px 0;
-  background: #fff;
+  padding: 140px 0 100px;
+  background: transparent;
 }
 
 .story-stats-flex {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 90px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px;
-  background: #ffffff;
-  border-radius: 36px;
-  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.08);
+  padding: 0 20px;
   align-items: start;
 }
 
 .story-text {
-  max-width: 600px;
+  max-width: 560px;
 }
 
 .story-text .small-title {
@@ -121,15 +118,15 @@
   letter-spacing: 2px;
   color: #064e89;
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .story-text h2 {
   font-family: "Playfair Display", serif;
-  font-size: 44px;
+  font-size: 46px;
   color: #0f172a;
-  line-height: 1.15;
-  margin-bottom: 24px;
+  line-height: 1.12;
+  margin-bottom: 26px;
 }
 
 .story-text hr {
@@ -137,20 +134,20 @@
   height: 3px;
   background: #064e89;
   border: none;
-  margin: 20px 0;
+  margin: 18px 0 30px;
 }
 
 .story-text p {
   color: #475569;
   font-size: 17px;
-  line-height: 1.8;
+  line-height: 1.9;
   max-width: 520px;
 }
 
 .stats-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px 24px;
+  gap: 28px 20px;
   align-items: start;
 }
 
@@ -165,7 +162,7 @@
 }
 
 .stat-item i {
-  font-size: 42px;
+  font-size: 44px;
   color: #064e89;
   min-width: 48px;
 }
@@ -177,7 +174,7 @@
 }
 
 .stat-item h3 {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 800;
   color: #0f172a;
   margin-bottom: 4px;
