@@ -93,8 +93,7 @@
                         $filename = time().'_'.$_FILES['product_image']['name'];
                         $tmp_name = $_FILES['product_image']['tmp_name'];
 
-                        $type1 = explode('.', $filename);
-                        $type2 = $type1[1];
+                        $type2 = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
 
                         // menampung data format file yang diizinkan
                         $tipe_diizinkan = array('jpg', 'jpeg', 'png', 'gif');
