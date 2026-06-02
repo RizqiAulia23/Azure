@@ -139,16 +139,15 @@
                     <?php endif; ?>
 
                     <form action="" method="POST">
-                        <div class="form-group">
-                            <i class='bx bx-user'></i>
+                        <div">
+                            
                             <input type="text" name="nama" placeholder="Full Name" required>
                         </div>
-                        <div class="form-group">
-                            <i class='bx bx-envelope'></i>
+                        <div">
+                            
                             <input type="email" name="email" placeholder="Email address" required>
                         </div>
-                        <div class="form-group">
-                            <i class='bx bx-pencil'></i>
+                        <div">
                             <textarea name="pesan" placeholder="Your Message" required></textarea>
                         </div>
                         <button type="submit" name="submit" class="btn-send">Send Your Message</button>
