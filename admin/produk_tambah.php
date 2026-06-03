@@ -90,7 +90,7 @@
                         $product_status = $_POST['product_status'];
 
                         // upload gambar
-                        $filename = time().'_'.$_FILES['product_image']['name'];
+                        $filename = $_FILES['product_image']['name'];
                         $tmp_name = $_FILES['product_image']['tmp_name'];
 
                         $type2 = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
