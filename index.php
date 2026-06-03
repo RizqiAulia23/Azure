@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Azure store</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/logoweb.png">
+    <link rel="shortcut icon" href="img/logoweb.png?v=2">
     <link rel="stylesheet" type="text/css" href="css/style.css?v=1.1">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
