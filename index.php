@@ -32,7 +32,7 @@
                 </ul>
             </nav>
             <a href="login.php" class="profile-icon">
-                <i class='bx bx-user'></i>
+                
                 <span>LOGIN</span>
             </a>
         </div>
