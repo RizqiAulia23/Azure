@@ -92,7 +92,7 @@ nav ul li a.active {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 22px;
+  margin-left: 40px;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
