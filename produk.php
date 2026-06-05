@@ -9,6 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Product - Azure Perfume</title>
+    <link rel="icon" type="image/png" href="img/logoweb.png">
     <link rel="stylesheet" type="text/css" href="css/style.css?v=1.3">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -30,7 +31,8 @@
                 </ul>
             </nav>
             <a href="login.php" class="profile-icon">
-                <img src="img/login_logo.png" alt="Profile">
+                <i class='bx bx-user'></i>
+                <span>LOGIN</span>
             </a>
         </div>
     </header>

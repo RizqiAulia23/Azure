@@ -1,5 +1,5 @@
 <?php
-    include 'db.php';
+    include 'config/db.php';
     $kontak = mysqli_query($conn, "SELECT admin_telp, admin_email, admin_address FROM tb_admin WHERE admin_id = '1'");
     $a = mysqli_fetch_object($kontak);
 ?>
@@ -9,6 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Azure store</title>
+    <link rel="icon" type="image/png" href="img/logoweb.png">
     <link rel="icon" type="image/png" href="img/logoweb.png">
     <link rel="stylesheet" type="text/css" href="css/style.css?v=1.1">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
@@ -31,7 +32,8 @@
                 </ul>
             </nav>
             <a href="login.php" class="profile-icon">
-                <img src="img/login_logo.png" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%;">
+                <i class='bx bx-user'></i>
+                <span>LOGIN</span>
             </a>
         </div>
     </header>

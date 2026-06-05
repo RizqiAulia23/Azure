@@ -87,17 +87,29 @@ nav ul li a.active {
   color: var(--primary-blue);
 }
 
-.profile-icon img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #eee;
-  transition: transform 0.3s;
+.profile-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  background: #0f243f;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  transition: all 0.25s ease;
 }
 
-.profile-icon:hover img {
-  transform: scale(1.1);
-  border-color: var(--primary-blue);
+.profile-icon:hover {
+  background: #173351;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(15, 36, 63, 0.16);
+}
+
+.profile-icon i {
+  font-size: 18px;
 }
 
 /* Hero Banner for Product Page */
