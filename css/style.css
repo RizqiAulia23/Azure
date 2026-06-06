@@ -68,6 +68,8 @@ header {
   height: 24px;
   padding: 0;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -675,7 +677,7 @@ nav ul li a.active {
   .logo img {
     height: 45px;
   }
-  
+
   /* Show login button next to hamburger with original styling */
   .profile-icon {
     order: 2;
@@ -686,12 +688,12 @@ nav ul li a.active {
     font-size: 13px;
     font-weight: 600;
   }
-  
+
   .mobile-menu-btn {
     order: 3;
     display: flex;
   }
-  
+
   /* Mobile Navigation Menu Drawer */
   nav {
     position: fixed;
@@ -705,7 +707,9 @@ nav ul li a.active {
     padding: 40px 24px;
     transform: translateY(-120%);
     opacity: 0;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+    transition:
+      transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+      opacity 0.3s ease;
     z-index: 999;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
     border-top: 1px solid #f0f0f0;
@@ -713,13 +717,13 @@ nav ul li a.active {
     margin-right: 0;
     overflow-y: auto;
   }
-  
+
   /* Toggle state */
   .menu-toggle:checked ~ nav {
     transform: translateY(0);
     opacity: 1;
   }
-  
+
   nav ul {
     flex-direction: column;
     gap: 24px;
@@ -729,45 +733,57 @@ nav ul li a.active {
     list-style: none;
     padding: 0;
   }
-  
+
   nav ul li {
     width: 100%;
     text-align: center;
     opacity: 0;
     transform: translateY(15px);
-    transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  
+
   .menu-toggle:checked ~ nav ul li {
     opacity: 1;
     transform: translateY(0);
   }
-  
-  .menu-toggle:checked ~ nav ul li:nth-child(1) { transition-delay: 0.05s; }
-  .menu-toggle:checked ~ nav ul li:nth-child(2) { transition-delay: 0.1s; }
-  .menu-toggle:checked ~ nav ul li:nth-child(3) { transition-delay: 0.15s; }
-  .menu-toggle:checked ~ nav ul li:nth-child(4) { transition-delay: 0.2s; }
-  
+
+  .menu-toggle:checked ~ nav ul li:nth-child(1) {
+    transition-delay: 0.05s;
+  }
+  .menu-toggle:checked ~ nav ul li:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+  .menu-toggle:checked ~ nav ul li:nth-child(3) {
+    transition-delay: 0.15s;
+  }
+  .menu-toggle:checked ~ nav ul li:nth-child(4) {
+    transition-delay: 0.2s;
+  }
+
   nav ul li a {
     display: block;
     font-size: 20px;
     font-weight: 600;
     color: #17233d;
     padding: 12px 20px;
-    transition: color 0.3s ease, transform 0.2s ease;
+    transition:
+      color 0.3s ease,
+      transform 0.2s ease;
     letter-spacing: 0.5px;
   }
-  
+
   nav ul li a:hover,
   nav ul li a.active {
     color: var(--primary-blue);
   }
-  
+
   nav ul li a.active {
     position: relative;
     display: inline-block;
   }
-  
+
   nav ul li a.active::after {
     content: "";
     position: absolute;
@@ -779,7 +795,7 @@ nav ul li a.active {
     background: var(--primary-blue);
     border-radius: 2px;
   }
-  
+
   /* Hamburger toggle animation */
   .mobile-menu-btn span:nth-child(1) {
     transform-origin: top left;
@@ -793,7 +809,7 @@ nav ul li a.active {
   .menu-toggle:checked + .mobile-menu-btn span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
   }
-  
+
   .category-flex {
     flex-direction: column;
   }
