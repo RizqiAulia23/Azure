@@ -64,18 +64,16 @@ header {
   border: none;
   background: transparent;
   cursor: pointer;
-  width: 32px;
-  height: 24px;
+  width: 44px;
+  height: 34px;
   padding: 0;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.mobile-menu-btn span {
-  display: block;
+  overflow: visible;
+  margin-right: 4px;
   width: 100%;
   height: 3px;
   border-radius: 2px;
