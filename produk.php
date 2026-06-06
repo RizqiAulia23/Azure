@@ -21,7 +21,13 @@
         <div class="header-inner">
             <a href="index.php" class="logo">
                 <img src="img/logo.png" alt="Azure Logo">
-            </a>   
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <nav>
                 <ul>
                     <li><a href="index.php">Home</a></li>
