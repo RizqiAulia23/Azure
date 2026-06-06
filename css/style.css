@@ -79,6 +79,8 @@ header {
   display: block;
   width: 100%;
   max-width: 22px;
+  height: 3px;
+  background: #111;
   margin: 2px 0;
   transition:
     transform 0.3s ease,
