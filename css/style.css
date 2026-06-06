@@ -628,6 +628,27 @@ nav ul li a.active {
 }
 
 @media (max-width: 768px) {
+  header {
+    padding: 12px 0;
+  }
+  .header-inner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .logo img {
+    height: 45px;
+  }
+  nav {
+    margin-left: auto;
+  }
+  nav ul {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
   .category-flex {
     flex-direction: column;
   }
