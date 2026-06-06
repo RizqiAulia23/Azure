@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../db.php';
+include __DIR__ . '/../config/db.php';
 
 $query = mysqli_query($conn, "SELECT * FROM tb_admin WHERE admin_id = '".$_SESSION['id_login']."'");
 $d = mysqli_fetch_object($query);

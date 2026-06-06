@@ -1,4 +1,4 @@
-<?php include('config/db.php');
+<?php include __DIR__ . '/../config/db.php';
 session_start();
 if (!isset($_SESSION['id_login']) || (trim($_SESSION['id_login']) == '')) { ?>
 <script>
