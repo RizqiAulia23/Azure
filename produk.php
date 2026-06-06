@@ -34,6 +34,7 @@
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="produk.php" class="active">Product</a></li>
                     <li><a href="contact.php">Contact</a></li>
+                    <li class="mobile-login"><a href="login.php">Login</a></li>
                 </ul>
             </nav>
             <a href="login.php" class="profile-icon">
