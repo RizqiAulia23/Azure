@@ -1,5 +1,5 @@
 <?php
-    include 'db.php';
+    include 'config/db.php';
     $kontak = mysqli_query($conn, "SELECT admin_telp, admin_email, admin_address FROM tb_admin WHERE admin_id = '1'");
     $a = mysqli_fetch_object($kontak);
 ?>

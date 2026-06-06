@@ -48,7 +48,7 @@
                 </form>
 
                 <?php
-                include ('db.php');
+                include ('config/db.php');
                 if(isset($_POST['submit'])){
                     $username = $_POST['user'];
                     $password = $_POST['pass'];
