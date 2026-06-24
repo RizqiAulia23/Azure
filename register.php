@@ -3,90 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Azure</title>
-    <!-- Include Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="css/login.css?v=1.2">
+    <title>Register | Azure Perfume</title>
+    <link rel="icon" type="image/png" href="img/logoweb.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            navy: '#0A1128',
+                            navyDark: '#070C1E',
+                            navyLight: '#131C38',
+                            gold: '#C5A880',
+                            goldBright: '#E5C497',
+                            goldDark: '#9C7F59',
+                            black: '#03050B',
+                            cream: '#F7F4F0',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=2.0">
 </head>
-<body>
-    <div class="login-container">
-        <!-- Left Side: Image and Welcome Text -->
-        <div class="login-left">
-            <div class="overlay-text">
-                <h1>Create Your Account</h1>
-                <div class="line-separator"></div>
-                <p>Join <strong>AZURE</strong> and start your journey<br>with us today.</p>
+<body class="bg-luxury-black text-slate-100 font-sans min-h-screen flex items-center justify-center p-4 sm:p-6 bg-noise">
+
+    <!-- Auth Container Box -->
+    <div class="max-w-4xl w-full h-[650px] grid grid-cols-1 md:grid-cols-2 rounded-lg overflow-hidden glass-card">
+        
+        <!-- Left Column: Cinematic Branding (hidden on small screens) -->
+        <div class="hidden md:flex relative flex-col justify-end p-12 bg-cover bg-center" style="background-image: linear-gradient(to top, rgba(3,5,11,0.95) 30%, rgba(3,5,11,0.3) 100%), url('img/bg_login.png');">
+            <div class="space-y-4">
+                <span class="text-[10px] font-bold tracking-[0.3em] text-luxury-gold uppercase block">Olfactory Sanctuary</span>
+                <h1 class="text-3xl font-serif text-white font-light leading-tight">Create Your Account<br>with <span class="italic text-luxury-goldBright font-normal font-serif">Azure Perfume</span></h1>
+                <div class="w-8 h-[1px] bg-luxury-gold"></div>
+                <p class="text-xs text-slate-300 leading-relaxed font-light">Join our exclusive circle of collectors and receive bespoke notifications on new olfactory collections.</p>
             </div>
+            <!-- Absolute light overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-luxury-navyDark/20 to-transparent pointer-events-none"></div>
         </div>
-
-        <!-- Right Side: Register Form -->
-        <div class="login-right">
-            <div class="form-wrapper">
-
-                <img src="img/logo.png" alt="welcome-img" class="welcome-img">
-
-                <form action="" method="POST">
-                    <div class="input-group">
-                        <label for="nama">Full Name</label>
-                        <div class="input-container">
-                            <i class="fas fa-user icon"></i>
-                            <input type="text" name="nama" id="nama" placeholder="Enter your name" required>
+        
+        <!-- Right Column: Register Form -->
+        <div class="flex flex-col justify-center p-8 sm:p-12 bg-luxury-navyLight/65 overflow-y-auto">
+            <div class="space-y-5 w-full">
+                <!-- Header -->
+                <div class="text-center md:text-left space-y-1">
+                    <img src="img/logo.png" alt="Azure Logo" class="h-8 w-auto mx-auto md:mx-0 filter brightness-110">
+                    <h2 class="text-lg font-serif tracking-wider uppercase text-white font-semibold pt-2">Register Patron</h2>
+                    <p class="text-xs text-slate-400 font-light">Join the house of signature fragrances.</p>
+                </div>
+                
+                <form action="register.php" method="POST" class="space-y-3">
+                    <!-- Full Name -->
+                    <div class="space-y-1">
+                        <label for="nama" class="text-[9px] font-bold tracking-widest uppercase text-slate-400">Full Name</label>
+                        <div class="relative">
+                            <span class="absolute left-3.5 top-2.5 text-slate-500"><i class="bx bx-user"></i></span>
+                            <input type="text" name="nama" id="nama" placeholder="Full Name" required class="w-full bg-luxury-black/60 border border-luxury-gold/25 rounded px-10 py-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-luxury-gold transition duration-300">
                         </div>
                     </div>
 
-                    <div class="input-group">
-                        <label for="username">Username</label>
-                        <div class="input-container">
-                            <i class="fas fa-user-circle icon"></i>
-                            <input type="text" name="user" id="username" placeholder="Enter your username" required>
+                    <!-- Username -->
+                    <div class="space-y-1">
+                        <label for="username" class="text-[9px] font-bold tracking-widest uppercase text-slate-400">Username</label>
+                        <div class="relative">
+                            <span class="absolute left-3.5 top-2.5 text-slate-500"><i class="bx bx-user-circle"></i></span>
+                            <input type="text" name="user" id="username" placeholder="Username" required class="w-full bg-luxury-black/60 border border-luxury-gold/25 rounded px-10 py-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-luxury-gold transition duration-300">
                         </div>
                     </div>
 
-                    <div class="input-group">
-                        <label for="email">Email</label>
-                        <div class="input-container">
-                            <i class="fas fa-envelope icon"></i>
-                            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <!-- Email -->
+                    <div class="space-y-1">
+                        <label for="email" class="text-[9px] font-bold tracking-widest uppercase text-slate-400">Email Address</label>
+                        <div class="relative">
+                            <span class="absolute left-3.5 top-2.5 text-slate-500"><i class="bx bx-envelope"></i></span>
+                            <input type="email" name="email" id="email" placeholder="Email Address" required class="w-full bg-luxury-black/60 border border-luxury-gold/25 rounded px-10 py-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-luxury-gold transition duration-300">
                         </div>
                     </div>
 
-                    <div class="input-group">
-                        <label for="password">Password</label>
-                        <div class="input-container">
-                            <i class="fas fa-lock icon"></i>
-                            <input type="password" name="pass" id="password" placeholder="Enter your password" required>
+                    <!-- Password -->
+                    <div class="space-y-1">
+                        <label for="password" class="text-[9px] font-bold tracking-widest uppercase text-slate-400">Password</label>
+                        <div class="relative">
+                            <span class="absolute left-3.5 top-2.5 text-slate-500"><i class="bx bx-lock-alt"></i></span>
+                            <input type="password" name="pass" id="password" placeholder="Password" required class="w-full bg-luxury-black/60 border border-luxury-gold/25 rounded px-10 py-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-luxury-gold transition duration-300">
                         </div>
                     </div>
 
-                    <div class="input-group">
-                        <label for="alamat">Address</label>
-                        <div class="input-container">
-                            <i class="fas fa-map-marker-alt icon"></i>
-                            <input type="text" name="alamat" id="alamat" placeholder="Enter your address" required>
+                    <!-- Address -->
+                    <div class="space-y-1">
+                        <label for="alamat" class="text-[9px] font-bold tracking-widest uppercase text-slate-400">Complete Address</label>
+                        <div class="relative">
+                            <span class="absolute left-3.5 top-2.5 text-slate-500"><i class="bx bx-map"></i></span>
+                            <input type="text" name="alamat" id="alamat" placeholder="Address for delivery" required class="w-full bg-luxury-black/60 border border-luxury-gold/25 rounded px-10 py-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-luxury-gold transition duration-300">
                         </div>
                     </div>
-
-
-
-
-                    <div class="button-container">
-                        <button type="submit" name="submit" class="btn-login">REGISTER</button>
+                    
+                    <!-- Submit -->
+                    <div class="pt-2">
+                        <button type="submit" name="submit" class="w-full inline-flex items-center justify-center h-11 bg-gradient-to-r from-luxury-goldDark to-luxury-goldBright text-luxury-navyDark font-bold text-xs tracking-widest uppercase shadow hover:scale-[1.01] active:scale-[0.99] transition duration-300">
+                            Submit Registration
+                        </button>
                     </div>
-                     <p class="register-link">Sudah Punya Akun? <a href="login.php">Klik di sini untuk Login</a></p>
-
                 </form>
-
+                
+                <!-- Footer / Login Link -->
+                <div class="text-center md:text-left">
+                    <p class="text-xs text-slate-400 font-light">Already a Patron? <a href="login.php" class="text-luxury-gold font-semibold hover:text-luxury-goldBright transition">Sign In here</a></p>
+                </div>
+                
+                <!-- PHP Registration logic -->
                 <?php
-                    include('db.php');
+                    include('config/db.php');
                     if(isset($_POST['submit'])){
-                        $nama     = $_POST['nama'];
-                        $email    = $_POST['email'];
-                        $username = $_POST['user'];
-                        $password = $_POST['pass'];
-                        $alamat   = $_POST['alamat'];
-                        
-                        // Default values for fields not in the design but required by DB
-                        $telpon   = "";
+                        $nama     = mysqli_real_escape_string($conn, $_POST['nama']);
+                        $email    = mysqli_real_escape_string($conn, $_POST['email']);
+                        $username = mysqli_real_escape_string($conn, $_POST['user']);
+                        $password = mysqli_real_escape_string($conn, $_POST['pass']);
+                        $alamat   = mysqli_real_escape_string($conn, $_POST['alamat']);
+                        $telpon   = ""; // default column padding
 
                         $insert = mysqli_query($conn, "INSERT INTO tb_admin VALUES (
                             null,
@@ -99,16 +149,17 @@
                             'pelanggan'
                         )");
 
-                            if($insert){
-                                echo '<script>alert("Berhasil, silakan login")</script>';
-                                echo '<script type="text/javascript">window.location="login.php"</script>';
-                            }else{
-                                echo '<script>alert("Gagal Mendaftar")</script>';
-                            }
+                        if($insert){
+                            echo '<script>alert("Registration Successful! Please login to your new account.")</script>';
+                            echo '<script type="text/javascript">window.location="login.php"</script>';
+                        }else{
+                            echo '<script>alert("Error: Registration failed. Please try again.")</script>';
                         }
+                    }
                 ?>
             </div>
         </div>
     </div>
+
 </body>
 </html>

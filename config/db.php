@@ -1,10 +1,10 @@
 <?php
 
-$hostname = getenv('MYSQLHOST');
-$username = getenv('MYSQLUSER');
-$password = getenv('MYSQLPASSWORD');
-$dbname   = getenv('MYSQLDATABASE');
-$port     = getenv('MYSQLPORT');
+$hostname = getenv('MYSQLHOST') ? getenv('MYSQLHOST') : '127.0.0.1';
+$username = getenv('MYSQLUSER') ? getenv('MYSQLUSER') : 'root';
+$password = getenv('MYSQLPASSWORD') !== false ? getenv('MYSQLPASSWORD') : '';
+$dbname   = getenv('MYSQLDATABASE') ? getenv('MYSQLDATABASE') : 'azure';
+$port     = getenv('MYSQLPORT') ? getenv('MYSQLPORT') : '3306';
 
 $conn = mysqli_connect(
     $hostname,

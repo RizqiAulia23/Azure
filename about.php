@@ -1,198 +1,115 @@
 <?php
+    $page_title = "Our Heritage - Azure Perfume";
     include 'config/db.php';
-    $kontak = mysqli_query($conn, "SELECT admin_telp, admin_email, admin_address FROM tb_admin WHERE admin_id = '1'");
-    $a = mysqli_fetch_object($kontak);
+    include 'config/helper.php';
+    include 'includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Us - Azure Perfume</title>
-    <link rel="icon" type="image/png" href="img/logoweb.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=1.3">
-    <link rel="stylesheet" type="text/css" href="css/about.css?v=1.3">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-</head>
-<body>
 
-    <!-- header -->
-    <header>
-        <div class="header-inner">
-            <a href="index.php" class="logo">
-                <img src="img/logo.png" alt="Azure Logo">
-            </a>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <nav>
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php" class="active">About Us</a></li>
-                    <li><a href="produk.php">Product</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                    <li class="mobile-login"><a href="login.php">Login</a></li>
-                </ul>
-            </nav>
-            <a href="login.php" class="profile-icon">
-                <i class='bx bx-user'></i>
-                <span>LOGIN</span>
-            </a>
+    <!-- About Hero Section -->
+    <section class="relative py-28 bg-black overflow-hidden flex items-center justify-center border-b border-luxury-gold/15">
+        <div class="absolute inset-0 bg-gradient-to-b from-luxury-navyDark/90 to-luxury-black z-0"></div>
+        <div class="absolute inset-0 opacity-30 mix-blend-overlay" style="background: url('img/banner_about.png') center/cover no-repeat;"></div>
+        
+        <div class="relative text-center space-y-4 z-10 max-w-3xl px-4 animate-fade-in-up">
+            <span class="text-xs font-bold tracking-[0.35em] text-luxury-gold uppercase block">The Azure Philosophy</span>
+            <h1 class="text-4xl sm:text-6xl font-serif text-white font-light leading-tight">The Essence of Elegance<br>in Every <span class="italic text-luxury-goldBright font-normal">Scent Accord</span></h1>
+            <div class="w-16 h-[1px] bg-luxury-gold mx-auto my-6"></div>
+            <p class="text-sm sm:text-base text-slate-300 font-light leading-relaxed max-w-xl mx-auto">
+                AZURE PERFUME is more than an olfactory blend. It is a story compiled in liquid form, a distinct statement of identity, and an enduring memory.
+            </p>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="about-hero">
-        <div class="about-hero-text">
-            <h2>The Essence of Elegance in Every Scent</h2>
-            <hr>
-            <p>AZURE PERFUME is more than a fragrance. it's a story, a memory, and a statment. We blend the finest ingredients from around the world to create timeless scents that define who you are.</p>
-        </div>
-        <div class="about-hero-img"></div>
     </section>
 
-    <!-- Features Section -->
-    <section class="about-features">
-        <div class="features-flex">
-            <div class="feature-item">
-                <div class="feature-icon">
+    <!-- Core Values Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-luxury-black bg-noise">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Value item 1 -->
+            <div class="glass-card rounded-lg p-8 text-center space-y-4 group hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 bg-luxury-navy rounded-full flex items-center justify-center mx-auto border border-luxury-gold/20 text-luxury-gold text-xl">
                     <i class='bx bx-leaf'></i>
                 </div>
-                <h4>Premium Ingredients</h4>
-                <p>We source the finest natural ingredients for exceptional quality.</p>
+                <h4 class="text-base font-serif font-bold text-white uppercase tracking-wider">Precious Materials</h4>
+                <p class="text-xs text-slate-400 leading-relaxed font-light">We source organic botanicals and raw oils directly from the fields of Grasse and Tuscany.</p>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">
+            
+            <!-- Value item 2 -->
+            <div class="glass-card rounded-lg p-8 text-center space-y-4 group hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 bg-luxury-navy rounded-full flex items-center justify-center mx-auto border border-luxury-gold/20 text-luxury-gold text-xl">
                     <i class='bx bx-time-five'></i>
                 </div>
-                <h4>Long Lasting</h4>
-                <p>Our fragrances are crafted to last, leaving a lasting impression.</p>
+                <h4 class="text-base font-serif font-bold text-white uppercase tracking-wider">Enduring Presence</h4>
+                <p class="text-xs text-slate-400 leading-relaxed font-light">Crafted in Extrait concentrations, our formulas ensure lingering sillage and 8+ hours of wear.</p>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">
+            
+            <!-- Value item 3 -->
+            <div class="glass-card rounded-lg p-8 text-center space-y-4 group hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 bg-luxury-navy rounded-full flex items-center justify-center mx-auto border border-luxury-gold/20 text-luxury-gold text-xl">
                     <i class='bx bx-spray-can'></i>
                 </div>
-                <h4>Elegant Design</h4>
-                <p>Minimalist, timeless, and refined - designed to reflect luxury.</p>
+                <h4 class="text-base font-serif font-bold text-white uppercase tracking-wider">Artisanal Design</h4>
+                <p class="text-xs text-slate-400 leading-relaxed font-light">Each signature heavy-glass flacon represents absolute geometric harmony and minimalist luxury.</p>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">
+            
+            <!-- Value item 4 -->
+            <div class="glass-card rounded-lg p-8 text-center space-y-4 group hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 bg-luxury-navy rounded-full flex items-center justify-center mx-auto border border-luxury-gold/20 text-luxury-gold text-xl">
                     <i class='bx bx-check-shield'></i>
                 </div>
-                <h4>Trusted Quality</h4>
-                <p>Every bottle represents our commitment to excellence.</p>
+                <h4 class="text-base font-serif font-bold text-white uppercase tracking-wider">Unrivaled Quality</h4>
+                <p class="text-xs text-slate-400 leading-relaxed font-light">Every composition undergoes rigorous olfactory testing, certified to ensure chemical purity.</p>
             </div>
+            
         </div>
     </section>
 
-    <!-- Story and Stats Section -->
-    <section class="about-story-stats">
-        <div class="story-stats-flex">
-            <div class="story-text">
-                <span class="small-title">ABOUT US</span>
-                <h2>Crafted with Passion, <br>Inspired by Nature</h2>
-                <hr>
-                <p>Founded in 2024, AZURE PERFUME was born from a passion for fine fragrances and a belief that scent has the power to inspire, uplift, and reveal the truest version of yourself. Every creation is a harmony of art and nature, handcrafted with care and dedication.</p>
+    <!-- Narrative & History Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-luxury-navyDark/35 border-t border-b border-luxury-gold/10">
+        <div class="max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+            
+            <!-- Text Narrative -->
+            <div class="space-y-6">
+                <span class="text-xs font-bold tracking-[0.25em] text-luxury-gold uppercase block">The Journey</span>
+                <h2 class="text-3xl sm:text-5xl font-serif text-white leading-tight font-light">Composed with Passion, <br><span class="italic text-luxury-goldBright font-normal">Inspired by Heritage.</span></h2>
+                <div class="w-12 h-[1px] bg-luxury-gold my-4"></div>
+                <p class="text-sm text-slate-300 leading-relaxed font-light">
+                    Founded in the summer of 2024, AZURE PERFUME was born out of a desire to break the boundaries of commercial scent profile structures. We believe fragrance is a highly personal signature - a silent introduction that tells a story before you even speak.
+                </p>
+                <p class="text-sm text-slate-400 leading-relaxed font-light">
+                    We select our elements with patience. Saffron from Cashmere, patchouli from Sumatra, and fresh bergamot from Calabria. These materials undergo slow aging processes to align and mature their top, heart, and base registers into a flawless olfactory symphony.
+                </p>
             </div>
-            <div class="stats-list">
-                <div class="stat-item">
-                    <i class='bx bx-calendar'></i>
-                    <div class="stat-item-text">
-                        <h3>2024</h3>
-                        <p>Year Established</p>
-                    </div>
+            
+            <!-- Milestones Grid -->
+            <div class="mt-12 lg:mt-0 grid grid-cols-2 gap-6">
+                
+                <div class="glass-card rounded-lg p-6 space-y-2 border-l-4 border-l-luxury-gold">
+                    <h3 class="text-2xl font-serif text-white font-bold">2024</h3>
+                    <p class="text-[10px] font-bold tracking-widest text-luxury-gold uppercase">Maison Founded</p>
+                    <p class="text-xs text-slate-400 font-light">Launched our initial collection in Jakarta.</p>
                 </div>
-                <div class="stat-item">
-                    <i class='bx bx-spray-can'></i>
-                    <div class="stat-item-text">
-                        <h3>25+</h3>
-                        <p>Unique Fragrances</p>
-                    </div>
+                
+                <div class="glass-card rounded-lg p-6 space-y-2 border-l-4 border-l-luxury-gold">
+                    <h3 class="text-2xl font-serif text-white font-bold">25+</h3>
+                    <p class="text-[10px] font-bold tracking-widest text-luxury-gold uppercase">Unique Accords</p>
+                    <p class="text-xs text-slate-400 font-light">Formulas spanning woody, floral, and fresh profiles.</p>
                 </div>
-                <div class="stat-item">
-                    <i class='bx bx-group'></i>
-                    <div class="stat-item-text">
-                        <h3>10K+</h3>
-                        <p>Happy Customers</p>
-                    </div>
+                
+                <div class="glass-card rounded-lg p-6 space-y-2 border-l-4 border-l-luxury-gold">
+                    <h3 class="text-2xl font-serif text-white font-bold">10K+</h3>
+                    <p class="text-[10px] font-bold tracking-widest text-luxury-gold uppercase">Loyal Patrons</p>
+                    <p class="text-xs text-slate-400 font-light">Patrons who choose Azure as their signature identity.</p>
                 </div>
-                <div class="stat-item">
-                    <i class='bx bx-globe'></i>
-                    <div class="stat-item-text">
-                        <h3>5+</h3>
-                        <p>Countries Reached</p>
-                    </div>
+                
+                <div class="glass-card rounded-lg p-6 space-y-2 border-l-4 border-l-luxury-gold">
+                    <h3 class="text-2xl font-serif text-white font-bold">5+</h3>
+                    <p class="text-[10px] font-bold tracking-widest text-luxury-gold uppercase">Global Capitals</p>
+                    <p class="text-xs text-slate-400 font-light">Mailing collections worldwide with premium safety wrapping.</p>
                 </div>
+                
             </div>
+            
         </div>
     </section>
 
-    <!-- footer -->
-    <footer class="main-footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <div class="footer-logo">
-                    <img src="img/logo.png" alt="Azure Logo">
-                </div>
-                <p>Timeless scents crafted with passion and precision for every moment of your life.</p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h4>Menu</h4>
-                <ul class="footer-links">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About Us</a></li>
-                    <li><a href="produk.php">Product</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Customer Care</h4>
-                <ul class="footer-links">
-                    <li><a href="contact.php">Shipping & Delivery</a></li>
-                    <li><a href="contact.php">Returns & Exchanges</a></li>
-                    <li><a href="contact.php">FAQs</a></li>
-                    <li><a href="contact.php">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <ul class="footer-links">
-                    <li>
-                        <a href="https://wa.me/6285934826191" target="_blank">
-                            <i class='bx bx-phone'></i> <?php echo $a->admin_telp ?>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="mailto:<?php echo $a->admin_email ?>">
-                            <i class='bx bx-envelope'></i> <?php echo $a->admin_email ?>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://maps.google.com/?q=<?php echo urlencode($a->admin_address); ?>" target="_blank">
-                            <i class='bx bx-map'></i> <?php echo $a->admin_address ?>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 AZURE. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>
