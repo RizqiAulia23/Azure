@@ -33,7 +33,7 @@
             <!-- Left Panel: Perfume Image (5 columns) -->
             <div class="lg:col-span-5 space-y-6">
                 <div class="glass-card rounded-lg overflow-hidden aspect-[4/5] bg-luxury-black flex items-center justify-center p-8 relative group border border-luxury-gold/15">
-                    <img src="produk/<?php echo $p->product_image; ?>" alt="<?php echo $p->product_name; ?>" class="max-h-full max-w-full object-contain filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform duration-700">
+                    <img src="produk/<?php echo $p->product_image; ?>" alt="<?php echo $p->product_name; ?>" class="max-h-full max-w-full object-contain filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)] group-hover:scale-105 atransition-transform duration-700">
                     
                     <!-- Ambient Glow Background -->
                     <div class="absolute inset-0 bg-gradient-to-t from-luxury-navyDark/35 to-transparent pointer-events-none"></div>

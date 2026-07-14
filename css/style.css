@@ -1,17 +1,17 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600&display=swap");
 
 /* Reset and Custom Base Styles */
 :root {
-  --color-navy: #0478ee;
-  --color-navy-dark: #064e89;
-  --color-navy-light: #5a8fb3;
-  --color-gold: #004b77;
-  --color-gold-bright: #8cc6ff;
-  --color-gold-dark: #0f243f;
-  --color-black: #f4f9ff;
-  --color-cream: #ffffff;
-  --text-dark: #17233d;
-  --text-muted: #5f6c88;
+  --color-navy: #1A56DB;
+  --color-navy-dark: #0F2942;
+  --color-navy-light: #F1F5F9;
+  --color-gold: #B38F4F;
+  --color-gold-bright: #D4AF37;
+  --color-gold-dark: #8C6D34;
+  --color-black: #F8FAFC;
+  --color-cream: #FFFFFF;
+  --text-dark: #0F172A;
+  --text-muted: #475569;
 
   --font-serif: "Playfair Display", "Cinzel", Georgia, serif;
   --font-sans: "Inter", "Montserrat", system-ui, -apple-system, sans-serif;
@@ -23,14 +23,14 @@
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-navy-dark);
+  background: var(--color-navy-light);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-gold-dark);
+  background: var(--color-navy-dark);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-gold-bright);
+  background: var(--color-gold);
 }
 
 body {
@@ -58,7 +58,7 @@ h6,
 
 /* Custom Textures and Layers */
 .bg-noise {
-  background-image: radial-gradient(rgba(4, 120, 238, 0.06) 1px, transparent 0);
+  background-image: radial-gradient(rgba(26, 86, 219, 0.04) 1px, transparent 0);
   background-size: 24px 24px;
 }
 
@@ -67,7 +67,7 @@ h6,
     135deg,
     var(--color-navy-dark) 0%,
     var(--color-navy) 50%,
-    var(--color-gold-dark) 100%
+    var(--color-gold) 100%
   );
 }
 
@@ -93,23 +93,23 @@ h6,
 }
 
 .glass-nav {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(4, 120, 238, 0.15);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(26, 86, 219, 0.08);
 }
 
 .glass-card {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(4, 120, 238, 0.15);
-  box-shadow: 0 10px 30px rgba(15, 36, 63, 0.08);
+  border: 1px solid rgba(26, 86, 219, 0.08);
+  box-shadow: 0 10px 30px rgba(15, 41, 66, 0.04);
 }
 
 .glass-card:hover {
-  border-color: rgba(4, 120, 238, 0.25);
-  box-shadow: 0 15px 35px rgba(15, 36, 63, 0.12);
+  border-color: rgba(26, 86, 219, 0.16);
+  box-shadow: 0 15px 35px rgba(15, 41, 66, 0.08);
 }
 
 /* Custom Animations */

@@ -23,14 +23,14 @@ session_start();
                 extend: {
                     colors: {
                         luxury: {
-                            navy: '#0A1128',
-                            navyDark: '#070C1E',
-                            navyLight: '#131C38',
-                            gold: '#C5A880',
-                            goldBright: '#E5C497',
-                            goldDark: '#9C7F59',
-                            black: '#03050B',
-                            cream: '#F7F4F0',
+                            navy: '#1A56DB',
+                            navyDark: '#0F2942',
+                            navyLight: '#F1F5F9',
+                            gold: '#B38F4F',
+                            goldBright: '#D4AF37',
+                            goldDark: '#8C6D34',
+                            black: '#F8FAFC',
+                            cream: '#FFFFFF',
                         }
                     },
                     fontFamily: {
@@ -44,7 +44,7 @@ session_start();
     
     <link rel="stylesheet" type="text/css" href="css/style.css?v=2.0">
 </head>
-<body class="bg-luxury-black text-slate-100 font-sans h-screen flex items-center justify-center p-4 sm:p-6 bg-noise">
+<body class="bg-luxury-black text-slate-800 font-sans h-screen flex items-center justify-center p-4 sm:p-6 bg-noise">
 
     <!-- Auth Container Box -->
     <div class="max-w-4xl w-full h-[600px] grid grid-cols-1 md:grid-cols-2 rounded-lg overflow-hidden glass-card">
@@ -62,39 +62,39 @@ session_start();
         </div>
         
         <!-- Right Column: Login Form -->
-        <div class="flex flex-col justify-center p-8 sm:p-12 bg-luxury-navyLight/65">
+        <div class="flex flex-col justify-center p-8 sm:p-12 bg-white">
             <div class="space-y-6 w-full">
                 <!-- Header -->
                 <div class="text-center md:text-left space-y-2">
-                    <img src="img/logo.png" alt="Azure Logo" class="h-8 w-auto mx-auto md:mx-0 filter brightness-110">
-                    <h2 class="text-lg font-serif tracking-wider uppercase text-white font-semibold pt-3">Sign In</h2>
-                    <p class="text-xs text-slate-400 font-light">Please log in to continue your journey.</p>
+                    <img src="img/logo.png" alt="Azure Logo" class="h-8 w-auto mx-auto md:mx-0 filter brightness-90">
+                    <h2 class="text-lg font-serif tracking-wider uppercase text-luxury-navyDark font-semibold pt-3">Sign In</h2>
+                    <p class="text-xs text-slate-500 font-light">Please log in to continue your journey.</p>
                 </div>
                 
                 <form action="login.php" method="POST" class="space-y-4">
                     <!-- Username -->
                     <div class="space-y-1">
-                        <label for="username" class="text-[10px] font-bold tracking-widest uppercase text-slate-400">Username</label>
+                        <label for="username" class="text-[10px] font-bold tracking-widest uppercase text-slate-500">Username</label>
                         <div class="relative">
-                            <span class="absolute left-3.5 top-3.5 text-slate-500"><i class="bx bx-user"></i></span>
-                            <input type="text" name="user" id="username" placeholder="Username" required class="w-full bg-luxury-black/60 border border-luxury-gold/25 rounded px-10 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-luxury-gold transition duration-300">
+                            <span class="absolute left-3.5 top-3.5 text-slate-400"><i class="bx bx-user"></i></span>
+                            <input type="text" name="user" id="username" placeholder="Username" required class="w-full bg-slate-50 border border-slate-200 rounded px-10 py-3 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-luxury-gold transition duration-300">
                         </div>
                     </div>
                     
                     <!-- Password -->
                     <div class="space-y-1">
                         <div class="flex items-center justify-between">
-                            <label for="password" class="text-[10px] font-bold tracking-widest uppercase text-slate-400">Password</label>
+                            <label for="password" class="text-[10px] font-bold tracking-widest uppercase text-slate-500">Password</label>
                         </div>
                         <div class="relative">
-                            <span class="absolute left-3.5 top-3.5 text-slate-500"><i class="bx bx-lock-alt"></i></span>
-                            <input type="password" name="pass" id="password" placeholder="Password" required class="w-full bg-luxury-black/60 border border-luxury-gold/25 rounded px-10 py-3 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-luxury-gold transition duration-300">
+                            <span class="absolute left-3.5 top-3.5 text-slate-400"><i class="bx bx-lock-alt"></i></span>
+                            <input type="password" name="pass" id="password" placeholder="Password" required class="w-full bg-slate-50 border border-slate-200 rounded px-10 py-3 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-luxury-gold transition duration-300">
                         </div>
                     </div>
                     
                     <!-- Submit -->
                     <div class="pt-2">
-                        <button type="submit" name="submit" class="w-full inline-flex items-center justify-center h-12 bg-gradient-to-r from-luxury-goldDark to-luxury-goldBright text-luxury-navyDark font-bold text-xs tracking-widest uppercase shadow hover:scale-[1.01] active:scale-[0.99] transition duration-300">
+                        <button type="submit" name="submit" class="w-full inline-flex items-center justify-center h-12 bg-gradient-to-r from-luxury-goldDark to-luxury-goldBright text-white font-bold text-xs tracking-widest uppercase shadow hover:scale-[1.01] active:scale-[0.99] transition duration-300">
                             Enter Salon
                         </button>
                     </div>

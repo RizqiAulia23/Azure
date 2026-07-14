@@ -34,14 +34,14 @@ $current_page = basename($_SERVER['PHP_SELF']);
                 extend: {
                     colors: {
                         luxury: {
-                            navy: '#0A1128',
-                            navyDark: '#070C1E',
-                            navyLight: '#131C38',
-                            gold: '#C5A880',
-                            goldBright: '#E5C497',
-                            goldDark: '#9C7F59',
-                            black: '#03050B',
-                            cream: '#F7F4F0',
+                            navy: '#1A56DB',
+                            navyDark: '#0F2942',
+                            navyLight: '#F1F5F9',
+                            gold: '#B38F4F',
+                            goldBright: '#D4AF37',
+                            goldDark: '#8C6D34',
+                            black: '#F8FAFC',
+                            cream: '#FFFFFF',
                         }
                     },
                     fontFamily: {
@@ -63,7 +63,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
         [x-cloak] { display: none !important; }
     </style>
 </head>
-<body class="bg-luxury-black text-slate-100 font-sans selection:bg-luxury-gold selection:text-luxury-black" x-data="cartSystem">
+<body class="bg-luxury-black text-slate-800 font-sans selection:bg-luxury-gold selection:text-white" x-data="cartSystem">
 
     <!-- Header Navigation -->
     <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 glass-nav" id="mainHeader">
@@ -73,34 +73,34 @@ $current_page = basename($_SERVER['PHP_SELF']);
                 <!-- Logo -->
                 <div class="flex-shrink-0">
                     <a href="index.php" class="flex items-center gap-2 group">
-                        <img src="img/logo.png" alt="Azure Logo" class="h-10 w-auto filter brightness-110 group-hover:scale-105 transition-transform duration-300">
+                        <img src="img/logo.png" alt="Azure Logo" class="h-10 w-auto filter brightness-90 group-hover:scale-105 transition-transform duration-300">
                     </a>
                 </div>
                 
                 <!-- Desktop Navigation Links -->
                 <nav class="hidden md:flex space-x-8 lg:space-x-10">
-                    <a href="index.php" class="relative py-2 text-sm font-medium tracking-widest uppercase transition-colors duration-300 <?php echo $current_page == 'index.php' ? 'text-luxury-gold' : 'text-slate-300 hover:text-white'; ?>">
+                    <a href="index.php" class="relative py-2 text-sm font-medium tracking-widest uppercase transition-colors duration-300 <?php echo $current_page == 'index.php' ? 'text-luxury-navy font-semibold' : 'text-slate-600 hover:text-luxury-navy'; ?>">
                         Home
                         <?php if($current_page == 'index.php'): ?>
-                            <span class="absolute bottom-0 left-0 w-full h-[1px] bg-luxury-gold"></span>
+                            <span class="absolute bottom-0 left-0 w-full h-[2px] bg-luxury-navy"></span>
                         <?php endif; ?>
                     </a>
-                    <a href="produk.php" class="relative py-2 text-sm font-medium tracking-widest uppercase transition-colors duration-300 <?php echo $current_page == 'produk.php' ? 'text-luxury-gold' : 'text-slate-300 hover:text-white'; ?>">
+                    <a href="produk.php" class="relative py-2 text-sm font-medium tracking-widest uppercase transition-colors duration-300 <?php echo $current_page == 'produk.php' ? 'text-luxury-navy font-semibold' : 'text-slate-600 hover:text-luxury-navy'; ?>">
                         Shop
                         <?php if($current_page == 'produk.php'): ?>
-                            <span class="absolute bottom-0 left-0 w-full h-[1px] bg-luxury-gold"></span>
+                            <span class="absolute bottom-0 left-0 w-full h-[2px] bg-luxury-navy"></span>
                         <?php endif; ?>
                     </a>
-                    <a href="about.php" class="relative py-2 text-sm font-medium tracking-widest uppercase transition-colors duration-300 <?php echo $current_page == 'about.php' ? 'text-luxury-gold' : 'text-slate-300 hover:text-white'; ?>">
+                    <a href="about.php" class="relative py-2 text-sm font-medium tracking-widest uppercase transition-colors duration-300 <?php echo $current_page == 'about.php' ? 'text-luxury-navy font-semibold' : 'text-slate-600 hover:text-luxury-navy'; ?>">
                         About
                         <?php if($current_page == 'about.php'): ?>
-                            <span class="absolute bottom-0 left-0 w-full h-[1px] bg-luxury-gold"></span>
+                            <span class="absolute bottom-0 left-0 w-full h-[2px] bg-luxury-navy"></span>
                         <?php endif; ?>
                     </a>
-                    <a href="contact.php" class="relative py-2 text-sm font-medium tracking-widest uppercase transition-colors duration-300 <?php echo $current_page == 'contact.php' ? 'text-luxury-gold' : 'text-slate-300 hover:text-white'; ?>">
+                    <a href="contact.php" class="relative py-2 text-sm font-medium tracking-widest uppercase transition-colors duration-300 <?php echo $current_page == 'contact.php' ? 'text-luxury-navy font-semibold' : 'text-slate-600 hover:text-luxury-navy'; ?>">
                         Contact
                         <?php if($current_page == 'contact.php'): ?>
-                            <span class="absolute bottom-0 left-0 w-full h-[1px] bg-luxury-gold"></span>
+                            <span class="absolute bottom-0 left-0 w-full h-[2px] bg-luxury-navy"></span>
                         <?php endif; ?>
                     </a>
                 </nav>
@@ -109,35 +109,35 @@ $current_page = basename($_SERVER['PHP_SELF']);
                 <div class="flex items-center gap-4 sm:gap-6">
                     
                     <!-- Cart Toggle Button -->
-                    <button @click="openCartDrawer = true" class="relative p-2 text-slate-300 hover:text-luxury-gold transition-colors duration-300" aria-label="Open Cart">
+                    <button @click="openCartDrawer = true" class="relative p-2 text-slate-600 hover:text-luxury-gold transition-colors duration-300" aria-label="Open Cart">
                         <i class="bx bx-shopping-bag text-2xl"></i>
-                        <span x-show="cartItemsCount() > 0" x-text="cartItemsCount()" class="absolute -top-1 -right-1 bg-luxury-gold text-luxury-black text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border border-luxury-navy shadow-lg" x-cloak></span>
+                        <span x-show="cartItemsCount() > 0" x-text="cartItemsCount()" class="absolute -top-1 -right-1 bg-luxury-gold text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border border-white shadow-lg" x-cloak></span>
                     </button>
                     
                     <!-- Account Icon -->
                     <?php if(isset($_SESSION['status_login']) && $_SESSION['status_login'] == true): ?>
                         <div class="relative" x-data="{ openProfile: false }">
                             <button @click="openProfile = !openProfile" class="flex items-center gap-2 py-2 px-3 rounded-full bg-luxury-navyLight border border-luxury-gold/20 hover:border-luxury-gold/50 transition-colors duration-300">
-                                <i class="bx bx-user-circle text-xl text-luxury-gold"></i>
-                                <span class="text-xs font-semibold tracking-wider text-slate-300 hidden sm:inline">DASHBOARD</span>
-                                <i class="bx bx-chevron-down text-xs text-slate-400"></i>
+                                <i class="bx bx-user-circle text-xl text-luxury-navy"></i>
+                                <span class="text-xs font-semibold tracking-wider text-slate-700 hidden sm:inline">DASHBOARD</span>
+                                <i class="bx bx-chevron-down text-xs text-slate-500"></i>
                             </button>
                             <!-- Dropdown Menu -->
-                            <div x-show="openProfile" @click.away="openProfile = false" class="absolute right-0 mt-2 w-48 bg-luxury-navyLight border border-luxury-gold/20 rounded-md shadow-xl z-50 py-1" x-cloak>
+                            <div x-show="openProfile" @click.away="openProfile = false" class="absolute right-0 mt-2 w-48 bg-white border border-slate-200 rounded-md shadow-xl z-50 py-1" x-cloak>
                                 <?php if($_SESSION['level'] == 'admin'): ?>
-                                    <a href="admin/dashbord.php" class="block px-4 py-2 text-sm text-slate-300 hover:bg-luxury-navy/50 hover:text-luxury-gold"><i class="bx bx-grid-alt mr-2"></i> Admin Panel</a>
+                                    <a href="admin/dashbord.php" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-luxury-navy"><i class="bx bx-grid-alt mr-2"></i> Admin Panel</a>
                                 <?php endif; ?>
-                                <a href="logout.php" class="block px-4 py-2 text-sm text-red-400 hover:bg-luxury-navy/50 hover:text-red-300"><i class="bx bx-log-out mr-2"></i> Logout</a>
+                                <a href="logout.php" class="block px-4 py-2 text-sm text-red-600 hover:bg-slate-100 hover:text-red-500"><i class="bx bx-log-out mr-2"></i> Logout</a>
                             </div>
                         </div>
                     <?php else: ?>
-                        <a href="login.php" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase bg-gradient-to-r from-luxury-goldDark to-luxury-goldBright text-luxury-navyDark shadow-md hover:shadow-luxury-gold/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
+                        <a href="login.php" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase bg-gradient-to-r from-luxury-goldDark to-luxury-goldBright text-white shadow-md hover:shadow-luxury-gold/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
                             LOGIN
                         </a>
                     <?php endif; ?>
 
                     <!-- Mobile Menu Button -->
-                    <button @click="openMobileMenu = !openMobileMenu" class="md:hidden p-2 text-slate-300 hover:text-luxury-gold focus:outline-none" aria-label="Toggle Mobile Menu">
+                    <button @click="openMobileMenu = !openMobileMenu" class="md:hidden p-2 text-slate-600 hover:text-luxury-navy focus:outline-none" aria-label="Toggle Mobile Menu">
                         <i class="bx text-2xl" :class="openMobileMenu ? 'bx-x' : 'bx-menu'"></i>
                     </button>
                 </div>
@@ -145,18 +145,18 @@ $current_page = basename($_SERVER['PHP_SELF']);
         </div>
 
         <!-- Mobile Navigation Menu -->
-        <div x-show="openMobileMenu" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-4" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-4" class="md:hidden border-t border-luxury-gold/10 bg-luxury-navyDark/95 backdrop-blur-xl px-4 pt-4 pb-6 space-y-3" x-cloak>
-            <a href="index.php" class="block px-3 py-2 rounded-md text-base font-medium <?php echo $current_page == 'index.php' ? 'text-luxury-gold bg-luxury-navy' : 'text-slate-300 hover:text-white hover:bg-luxury-navyLight'; ?>">Home</a>
-            <a href="produk.php" class="block px-3 py-2 rounded-md text-base font-medium <?php echo $current_page == 'produk.php' ? 'text-luxury-gold bg-luxury-navy' : 'text-slate-300 hover:text-white hover:bg-luxury-navyLight'; ?>">Shop</a>
-            <a href="about.php" class="block px-3 py-2 rounded-md text-base font-medium <?php echo $current_page == 'about.php' ? 'text-luxury-gold bg-luxury-navy' : 'text-slate-300 hover:text-white hover:bg-luxury-navyLight'; ?>">About</a>
-            <a href="contact.php" class="block px-3 py-2 rounded-md text-base font-medium <?php echo $current_page == 'contact.php' ? 'text-luxury-gold bg-luxury-navy' : 'text-slate-300 hover:text-white hover:bg-luxury-navyLight'; ?>">Contact</a>
+        <div x-show="openMobileMenu" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-4" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-4" class="md:hidden border-t border-slate-200 bg-white/95 backdrop-blur-xl px-4 pt-4 pb-6 space-y-3" x-cloak>
+            <a href="index.php" class="block px-3 py-2 rounded-md text-base font-medium <?php echo $current_page == 'index.php' ? 'text-luxury-navy bg-luxury-navyLight' : 'text-slate-600 hover:text-luxury-navy hover:bg-luxury-navyLight'; ?>">Home</a>
+            <a href="produk.php" class="block px-3 py-2 rounded-md text-base font-medium <?php echo $current_page == 'produk.php' ? 'text-luxury-navy bg-luxury-navyLight' : 'text-slate-600 hover:text-luxury-navy hover:bg-luxury-navyLight'; ?>">Shop</a>
+            <a href="about.php" class="block px-3 py-2 rounded-md text-base font-medium <?php echo $current_page == 'about.php' ? 'text-luxury-navy bg-luxury-navyLight' : 'text-slate-600 hover:text-luxury-navy hover:bg-luxury-navyLight'; ?>">About</a>
+            <a href="contact.php" class="block px-3 py-2 rounded-md text-base font-medium <?php echo $current_page == 'contact.php' ? 'text-luxury-navy bg-luxury-navyLight' : 'text-slate-600 hover:text-luxury-navy hover:bg-luxury-navyLight'; ?>">Contact</a>
             <?php if(!isset($_SESSION['status_login'])): ?>
-                <a href="login.php" class="block px-3 py-2 rounded-md text-base font-medium text-luxury-gold hover:bg-luxury-navyLight">Login</a>
+                <a href="login.php" class="block px-3 py-2 rounded-md text-base font-medium text-luxury-navy hover:bg-luxury-navyLight">Login</a>
             <?php else: ?>
                 <?php if($_SESSION['level'] == 'admin'): ?>
-                    <a href="admin/dashbord.php" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-luxury-navyLight">Admin Dashboard</a>
+                    <a href="admin/dashbord.php" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-luxury-navyLight">Admin Dashboard</a>
                 <?php endif; ?>
-                <a href="logout.php" class="block px-3 py-2 rounded-md text-base font-medium text-red-400 hover:bg-luxury-navyLight">Logout</a>
+                <a href="logout.php" class="block px-3 py-2 rounded-md text-base font-medium text-red-500 hover:bg-luxury-navyLight">Logout</a>
             <?php endif; ?>
         </div>
     </header>

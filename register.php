@@ -20,14 +20,14 @@
                 extend: {
                     colors: {
                         luxury: {
-                            navy: '#0A1128',
-                            navyDark: '#070C1E',
-                            navyLight: '#131C38',
-                            gold: '#C5A880',
-                            goldBright: '#E5C497',
-                            goldDark: '#9C7F59',
-                            black: '#03050B',
-                            cream: '#F7F4F0',
+                            navy: '#1A56DB',
+                            navyDark: '#0F2942',
+                            navyLight: '#F1F5F9',
+                            gold: '#B38F4F',
+                            goldBright: '#D4AF37',
+                            goldDark: '#8C6D34',
+                            black: '#F8FAFC',
+                            cream: '#FFFFFF',
                         }
                     },
                     fontFamily: {
@@ -41,7 +41,7 @@
     
     <link rel="stylesheet" type="text/css" href="css/style.css?v=2.0">
 </head>
-<body class="bg-luxury-black text-slate-100 font-sans min-h-screen flex items-center justify-center p-4 sm:p-6 bg-noise">
+<body class="bg-luxury-black text-slate-800 font-sans min-h-screen flex items-center justify-center p-4 sm:p-6 bg-noise">
 
     <!-- Auth Container Box -->
     <div class="max-w-4xl w-full h-[650px] grid grid-cols-1 md:grid-cols-2 rounded-lg overflow-hidden glass-card">
@@ -59,64 +59,64 @@
         </div>
         
         <!-- Right Column: Register Form -->
-        <div class="flex flex-col justify-center p-8 sm:p-12 bg-luxury-navyLight/65 overflow-y-auto">
+        <div class="flex flex-col justify-center p-8 sm:p-12 bg-white overflow-y-auto">
             <div class="space-y-5 w-full">
                 <!-- Header -->
                 <div class="text-center md:text-left space-y-1">
-                    <img src="img/logo.png" alt="Azure Logo" class="h-8 w-auto mx-auto md:mx-0 filter brightness-110">
-                    <h2 class="text-lg font-serif tracking-wider uppercase text-white font-semibold pt-2">Register Patron</h2>
-                    <p class="text-xs text-slate-400 font-light">Join the house of signature fragrances.</p>
+                    <img src="img/logo.png" alt="Azure Logo" class="h-8 w-auto mx-auto md:mx-0 filter brightness-90">
+                    <h2 class="text-lg font-serif tracking-wider uppercase text-luxury-navyDark font-semibold pt-2">Register Patron</h2>
+                    <p class="text-xs text-slate-500 font-light">Join the house of signature fragrances.</p>
                 </div>
                 
                 <form action="register.php" method="POST" class="space-y-3">
                     <!-- Full Name -->
                     <div class="space-y-1">
-                        <label for="nama" class="text-[9px] font-bold tracking-widest uppercase text-slate-400">Full Name</label>
+                        <label for="nama" class="text-[9px] font-bold tracking-widest uppercase text-slate-500">Full Name</label>
                         <div class="relative">
-                            <span class="absolute left-3.5 top-2.5 text-slate-500"><i class="bx bx-user"></i></span>
-                            <input type="text" name="nama" id="nama" placeholder="Full Name" required class="w-full bg-luxury-black/60 border border-luxury-gold/25 rounded px-10 py-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-luxury-gold transition duration-300">
+                            <span class="absolute left-3.5 top-2.5 text-slate-400"><i class="bx bx-user"></i></span>
+                            <input type="text" name="nama" id="nama" placeholder="Full Name" required class="w-full bg-slate-50 border border-slate-200 rounded px-10 py-2.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-luxury-gold transition duration-300">
                         </div>
                     </div>
 
                     <!-- Username -->
                     <div class="space-y-1">
-                        <label for="username" class="text-[9px] font-bold tracking-widest uppercase text-slate-400">Username</label>
+                        <label for="username" class="text-[9px] font-bold tracking-widest uppercase text-slate-500">Username</label>
                         <div class="relative">
-                            <span class="absolute left-3.5 top-2.5 text-slate-500"><i class="bx bx-user-circle"></i></span>
-                            <input type="text" name="user" id="username" placeholder="Username" required class="w-full bg-luxury-black/60 border border-luxury-gold/25 rounded px-10 py-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-luxury-gold transition duration-300">
+                            <span class="absolute left-3.5 top-2.5 text-slate-400"><i class="bx bx-user-circle"></i></span>
+                            <input type="text" name="user" id="username" placeholder="Username" required class="w-full bg-slate-50 border border-slate-200 rounded px-10 py-2.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-luxury-gold transition duration-300">
                         </div>
                     </div>
 
                     <!-- Email -->
                     <div class="space-y-1">
-                        <label for="email" class="text-[9px] font-bold tracking-widest uppercase text-slate-400">Email Address</label>
+                        <label for="email" class="text-[9px] font-bold tracking-widest uppercase text-slate-500">Email Address</label>
                         <div class="relative">
-                            <span class="absolute left-3.5 top-2.5 text-slate-500"><i class="bx bx-envelope"></i></span>
-                            <input type="email" name="email" id="email" placeholder="Email Address" required class="w-full bg-luxury-black/60 border border-luxury-gold/25 rounded px-10 py-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-luxury-gold transition duration-300">
+                            <span class="absolute left-3.5 top-2.5 text-slate-400"><i class="bx bx-envelope"></i></span>
+                            <input type="email" name="email" id="email" placeholder="Email Address" required class="w-full bg-slate-50 border border-slate-200 rounded px-10 py-2.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-luxury-gold transition duration-300">
                         </div>
                     </div>
 
                     <!-- Password -->
                     <div class="space-y-1">
-                        <label for="password" class="text-[9px] font-bold tracking-widest uppercase text-slate-400">Password</label>
+                        <label for="password" class="text-[9px] font-bold tracking-widest uppercase text-slate-500">Password</label>
                         <div class="relative">
-                            <span class="absolute left-3.5 top-2.5 text-slate-500"><i class="bx bx-lock-alt"></i></span>
-                            <input type="password" name="pass" id="password" placeholder="Password" required class="w-full bg-luxury-black/60 border border-luxury-gold/25 rounded px-10 py-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-luxury-gold transition duration-300">
+                            <span class="absolute left-3.5 top-2.5 text-slate-400"><i class="bx bx-lock-alt"></i></span>
+                            <input type="password" name="pass" id="password" placeholder="Password" required class="w-full bg-slate-50 border border-slate-200 rounded px-10 py-2.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-luxury-gold transition duration-300">
                         </div>
                     </div>
 
                     <!-- Address -->
                     <div class="space-y-1">
-                        <label for="alamat" class="text-[9px] font-bold tracking-widest uppercase text-slate-400">Complete Address</label>
+                        <label for="alamat" class="text-[9px] font-bold tracking-widest uppercase text-slate-500">Complete Address</label>
                         <div class="relative">
-                            <span class="absolute left-3.5 top-2.5 text-slate-500"><i class="bx bx-map"></i></span>
-                            <input type="text" name="alamat" id="alamat" placeholder="Address for delivery" required class="w-full bg-luxury-black/60 border border-luxury-gold/25 rounded px-10 py-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-luxury-gold transition duration-300">
+                            <span class="absolute left-3.5 top-2.5 text-slate-400"><i class="bx bx-map"></i></span>
+                            <input type="text" name="alamat" id="alamat" placeholder="Address for delivery" required class="w-full bg-slate-50 border border-slate-200 rounded px-10 py-2.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-luxury-gold transition duration-300">
                         </div>
                     </div>
                     
                     <!-- Submit -->
                     <div class="pt-2">
-                        <button type="submit" name="submit" class="w-full inline-flex items-center justify-center h-11 bg-gradient-to-r from-luxury-goldDark to-luxury-goldBright text-luxury-navyDark font-bold text-xs tracking-widest uppercase shadow hover:scale-[1.01] active:scale-[0.99] transition duration-300">
+                        <button type="submit" name="submit" class="w-full inline-flex items-center justify-center h-11 bg-gradient-to-r from-luxury-goldDark to-luxury-goldBright text-white font-bold text-xs tracking-widest uppercase shadow hover:scale-[1.01] active:scale-[0.99] transition duration-300">
                             Submit Registration
                         </button>
                     </div>

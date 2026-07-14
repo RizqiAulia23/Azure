@@ -77,7 +77,7 @@
     <section class="py-20 px-4 sm:px-6 lg:px-8 bg-luxury-black relative z-10 bg-noise">
         <div class="max-w-7xl mx-auto text-center space-y-4 mb-16">
             <span class="text-xs font-bold tracking-[0.25em] text-luxury-gold uppercase">Scent Families</span>
-            <h2 class="text-3xl sm:text-5xl font-serif text-white">Explore Our Notes</h2>
+            <h2 class="text-3xl sm:text-5xl font-serif text-luxury-navyDark">Explore Our Notes</h2>
             <div class="w-12 h-[1px] bg-luxury-gold mx-auto mt-4"></div>
         </div>
         
@@ -85,46 +85,46 @@
             <!-- Category: FLORAL -->
             <a href="produk.php?kat=4" class="glass-card rounded-lg p-8 text-center space-y-4 group transition-luxury hover:-translate-y-2 block">
                 <div class="w-14 h-14 bg-luxury-navyLight rounded-full flex items-center justify-center mx-auto border border-luxury-gold/10 group-hover:border-luxury-gold/50 transition-all duration-300">
-                    <img src="img/floral.png" alt="Floral Category" class="w-8 h-8 object-contain filter invert brightness-200">
+                    <img src="img/floral.png" alt="Floral Category" class="w-8 h-8 object-contain">
                 </div>
-                <h3 class="text-lg font-serif font-semibold tracking-wide text-white uppercase group-hover:text-luxury-gold transition-colors">Floral</h3>
-                <p class="text-xs text-slate-400 leading-relaxed font-light">Soft, romantic, and fresh blooms harvested at dawn for timeless grace.</p>
+                <h3 class="text-lg font-serif font-semibold tracking-wide text-luxury-navyDark uppercase group-hover:text-luxury-gold transition-colors">Floral</h3>
+                <p class="text-xs text-slate-600 leading-relaxed font-light">Soft, romantic, and fresh blooms harvested at dawn for timeless grace.</p>
             </a>
             
             <!-- Category: WOODY -->
             <a href="produk.php?kat=3" class="glass-card rounded-lg p-8 text-center space-y-4 group transition-luxury hover:-translate-y-2 block">
                 <div class="w-14 h-14 bg-luxury-navyLight rounded-full flex items-center justify-center mx-auto border border-luxury-gold/10 group-hover:border-luxury-gold/50 transition-all duration-300">
-                    <img src="img/woody.png" alt="Woody Category" class="w-8 h-8 object-contain filter invert brightness-200">
+                    <img src="img/woody.png" alt="Woody Category" class="w-8 h-8 object-contain">
                 </div>
-                <h3 class="text-lg font-serif font-semibold tracking-wide text-white uppercase group-hover:text-luxury-gold transition-colors">Woody</h3>
-                <p class="text-xs text-slate-400 leading-relaxed font-light">Warm cedar, smoky sandalwood, and deep vetiver for sophisticated strength.</p>
+                <h3 class="text-lg font-serif font-semibold tracking-wide text-luxury-navyDark uppercase group-hover:text-luxury-gold transition-colors">Woody</h3>
+                <p class="text-xs text-slate-600 leading-relaxed font-light">Warm cedar, smoky sandalwood, and deep vetiver for sophisticated strength.</p>
             </a>
             
             <!-- Category: FRESH -->
             <a href="produk.php?kat=11" class="glass-card rounded-lg p-8 text-center space-y-4 group transition-luxury hover:-translate-y-2 block">
                 <div class="w-14 h-14 bg-luxury-navyLight rounded-full flex items-center justify-center mx-auto border border-luxury-gold/10 group-hover:border-luxury-gold/50 transition-all duration-300">
-                    <img src="img/fresh.png" alt="Fresh Category" class="w-8 h-8 object-contain filter invert brightness-200">
+                    <img src="img/fresh.png" alt="Fresh Category" class="w-8 h-8 object-contain">
                 </div>
-                <h3 class="text-lg font-serif font-semibold tracking-wide text-white uppercase group-hover:text-luxury-gold transition-colors">Fresh</h3>
-                <p class="text-xs text-slate-400 leading-relaxed font-light">Vibrant citrus zests, marine minerals, and green leaves for crisp vitality.</p>
+                <h3 class="text-lg font-serif font-semibold tracking-wide text-luxury-navyDark uppercase group-hover:text-luxury-gold transition-colors">Fresh</h3>
+                <p class="text-xs text-slate-600 leading-relaxed font-light">Vibrant citrus zests, marine minerals, and green leaves for crisp vitality.</p>
             </a>
             
             <!-- Category: LEATHER -->
             <a href="produk.php?kat=12" class="glass-card rounded-lg p-8 text-center space-y-4 group transition-luxury hover:-translate-y-2 block">
                 <div class="w-14 h-14 bg-luxury-navyLight rounded-full flex items-center justify-center mx-auto border border-luxury-gold/10 group-hover:border-luxury-gold/50 transition-all duration-300">
-                    <img src="img/leather.png" alt="Leather Category" class="w-8 h-8 object-contain filter invert brightness-200">
+                    <img src="img/leather.png" alt="Leather Category" class="w-8 h-8 object-contain">
                 </div>
-                <h3 class="text-lg font-serif font-semibold tracking-wide text-white uppercase group-hover:text-luxury-gold transition-colors">Leather</h3>
-                <p class="text-xs text-slate-400 leading-relaxed font-light">Rich Tuscan suede, bold saffron, and smoky oud for mysterious magnetism.</p>
+                <h3 class="text-lg font-serif font-semibold tracking-wide text-luxury-navyDark uppercase group-hover:text-luxury-gold transition-colors">Leather</h3>
+                <p class="text-xs text-slate-600 leading-relaxed font-light">Rich Tuscan suede, bold saffron, and smoky oud for mysterious magnetism.</p>
             </a>
         </div>
     </section>
 
     <!-- Best Seller Section -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-luxury-navyDark/35 relative z-10 border-t border-luxury-gold/10">
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-luxury-navyLight/40 relative z-10 border-t border-b border-luxury-navyLight">
         <div class="max-w-7xl mx-auto text-center space-y-4 mb-16">
             <span class="text-xs font-bold tracking-[0.25em] text-luxury-gold uppercase">Our Masterpieces</span>
-            <h2 class="text-3xl sm:text-5xl font-serif text-white">Bestselling Fragrances</h2>
+            <h2 class="text-3xl sm:text-5xl font-serif text-luxury-navyDark">Bestselling Fragrances</h2>
             <div class="w-12 h-[1px] bg-luxury-gold mx-auto mt-4"></div>
         </div>
 
@@ -160,27 +160,27 @@
                     <!-- Card Body -->
                     <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
                         <div class="space-y-1">
-                            <div class="flex items-center justify-between text-xs text-slate-400">
+                            <div class="flex items-center justify-between text-xs text-slate-500">
                                 <span><?php echo $meta['gender']; ?></span>
                                 <div class="flex items-center text-luxury-gold">
                                     <i class="bx bxs-star mr-0.5"></i>
-                                    <span class="font-bold text-white"><?php echo $meta['rating']; ?></span>
+                                    <span class="font-bold text-slate-700"><?php echo $meta['rating']; ?></span>
                                 </div>
                             </div>
                             
                             <a href="detail.php?id=<?php echo $p['product_id']; ?>" class="block">
-                                <h4 class="text-xl font-serif text-white tracking-wide hover:text-luxury-gold transition-colors truncate"><?php echo $p['product_name'] ?></h4>
+                                <h4 class="text-xl font-serif text-slate-800 tracking-wide hover:text-luxury-navy transition-colors truncate"><?php echo $p['product_name'] ?></h4>
                             </a>
                             
                             <!-- Notes snippet -->
-                            <p class="text-[11px] text-slate-400 line-clamp-1 italic font-light">
+                            <p class="text-[11px] text-slate-500 line-clamp-1 italic font-light">
                                 Top: <?php echo $meta['notes']['top']; ?>
                             </p>
                         </div>
 
                         <div class="pt-4 border-t border-luxury-gold/5 flex items-center justify-between">
-                            <span class="text-sm font-semibold text-luxury-goldBright font-serif"><?php echo format_idr($p['product_price']); ?></span>
-                            <button @click="addToCart(<?php echo $p['product_id']; ?>, '<?php echo addslashes($p['product_name']); ?>', <?php echo $p['product_price']; ?>, '<?php echo $p['product_image']; ?>', '<?php echo $meta['family']; ?>')" class="text-xs font-bold tracking-widest uppercase text-white hover:text-luxury-gold transition-colors flex items-center gap-1">
+                            <span class="text-sm font-semibold text-luxury-gold font-serif"><?php echo format_idr($p['product_price']); ?></span>
+                            <button @click="addToCart(<?php echo $p['product_id']; ?>, '<?php echo addslashes($p['product_name']); ?>', <?php echo $p['product_price']; ?>, '<?php echo $p['product_image']; ?>', '<?php echo $meta['family']; ?>')" class="text-xs font-bold tracking-widest uppercase text-luxury-navyDark hover:text-luxury-navy transition-colors flex items-center gap-1">
                                 Add To Cart <i class="bx bx-plus text-xs"></i>
                             </button>
                         </div>
@@ -190,7 +190,7 @@
         </div>
         
         <div class="text-center mt-16">
-            <a href="produk.php" class="inline-flex items-center justify-center px-10 py-4 border border-luxury-gold bg-transparent text-xs font-bold tracking-widest text-luxury-gold hover:bg-luxury-gold hover:text-luxury-black transition-all duration-300 uppercase">
+            <a href="produk.php" class="inline-flex items-center justify-center px-10 py-4 border border-luxury-gold bg-transparent text-xs font-bold tracking-widest text-luxury-gold hover:bg-luxury-gold hover:text-white transition-all duration-300 uppercase">
                 View All Fragrances
             </a>
         </div>
